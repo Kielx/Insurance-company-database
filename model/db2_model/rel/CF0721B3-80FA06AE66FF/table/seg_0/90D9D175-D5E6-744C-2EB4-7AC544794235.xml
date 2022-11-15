@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93A9384D-496F-C0FB-6B1C-ED66326E9715" name="client_phone_number">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90D9D175-D5E6-744C-2EB4-7AC544794235" name="phone_number">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>F90E9B08-3444-864F-F7B2-8ADE8D18D6B8</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="211AAE38-C3F4-7C22-2DC6-0011072AF579">
+<Column name="id" id="D60F8477-72D1-C745-63A7-1F6A371DCDAE">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>8D7614BB-9F0D-1DCC-F956-3AABDDBC4A06</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <use>0</use>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="phone_number" id="58D2F2F8-1F6C-8768-9B33-CFA536E87307">
+<Column name="phone_number" id="78EBA328-00B8-F3CB-1907-D79ED1B8A858">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>DF516798-3846-1775-F3A3-D571B30AA0F7</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <use>0</use>
@@ -30,9 +30,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="client_id" id="00E11E28-948B-937F-FFB7-9D80928646BB">
+<Column name="client_id" id="6576E1CD-75F4-449B-4EFB-4FCFDAEE1CA7">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>8BA5B21F-F29B-7B98-62B3-2680F98E7086</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <use>0</use>
@@ -42,12 +42,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8EB8AA1A-C07A-F66C-9A8A-AF9FF7A9C385" referredColumn="E7F74EF0-39CC-8E10-59DA-D818853B4F02"/>
+<colAssociation fkAssociation="C5936D4B-AA29-1AB1-21B5-3476C2636573" referredColumn="DC812B95-0715-7595-3F43-FE9DBA3C93C1"/>
 </associations>
 </Column>
-<Column name="phone_number_type_id" id="127665E5-232E-A1B6-8948-7636F3CD87AD">
+<Column name="phone_number_type_id" id="35F2A129-F1DA-7CFB-9BD2-DEC6089CB6DD">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>21645232-966C-26F5-C2FC-EC16F3431988</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <use>0</use>
@@ -57,43 +57,69 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A645A93F-5823-70C6-63AE-0F1438507A7A" referredColumn="BD5CB066-7D10-7F2A-A147-371749011B81"/>
+<colAssociation fkAssociation="0AE7A415-BD59-98D9-7D8E-DB908F9A3EEA" referredColumn="83398019-152E-CDA7-4133-5DDC0D8C7FB5"/>
+</associations>
+</Column>
+<Column name="agent_id" id="A0198D9C-30AE-FEB2-E4BB-65707A3396D7">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:33:38 UTC</createdTime>
+<generatorID>CC3BBFFB-5B8D-D07F-F0F5-A477D035955C</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAD21677-351B-812D-ED62-A419653C922A" referredColumn="8A97ADE4-AE97-E6CB-892C-5CFA091D4780"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3F5FAD51-5168-5B62-1D8E-8E55F45C6B0D" name="client_phone_number_PK">
+<ind_PK_UK id="6EE75D5F-D73C-E291-39F9-BE4F331E8636" name="client_phone_number_PK">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>58E6050A-50B0-4F35-130C-BA480F6B001E</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="211AAE38-C3F4-7C22-2DC6-0011072AF579"/>
+<colUsage columnID="D60F8477-72D1-C745-63A7-1F6A371DCDAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="73969691-9F6A-32E6-51C4-E8083D694C3A" name="client_phone_number_client_FK">
+<ind_PK_UK id="7F104121-E0CA-6886-EAE2-175AFC9AA57C" name="client_phone_number_client_FK">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>0719981F-306B-55BB-B2BB-90E425BB9F86</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="00E11E28-948B-937F-FFB7-9D80928646BB"/>
+<colUsage columnID="6576E1CD-75F4-449B-4EFB-4FCFDAEE1CA7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DE2B5545-E81E-C809-839B-FEDA93E88FE3" name="client_phone_number_phone_number_type_FK">
+<ind_PK_UK id="E2365E59-A6C4-CFF0-0A8B-684EAC0F18C9" name="client_phone_number_phone_number_type_FK">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>92CDA3A9-6512-E3A3-29B3-283D47871A44</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="127665E5-232E-A1B6-8948-7636F3CD87AD"/>
+<colUsage columnID="35F2A129-F1DA-7CFB-9BD2-DEC6089CB6DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6472B61-9D00-4724-A081-645624471306" name="phone_number_agent_FK">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:33:38 UTC</createdTime>
+<generatorID>89A20FCA-67D2-3A32-952D-7A025EE20622</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0198D9C-30AE-FEB2-E4BB-65707A3396D7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

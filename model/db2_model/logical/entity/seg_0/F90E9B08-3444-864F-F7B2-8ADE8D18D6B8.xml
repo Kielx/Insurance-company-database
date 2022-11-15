@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F90E9B08-3444-864F-F7B2-8ADE8D18D6B8" name="client_phone_number">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F90E9B08-3444-864F-F7B2-8ADE8D18D6B8" name="phone_number">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 08:54:27 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -62,6 +62,20 @@
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
 </engineerTo>
 <referedAttribute>0893C035-A73B-39AC-0A20-019AAC8C8010</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="CC3BBFFB-5B8D-D07F-F0F5-A477D035955C">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:24:02 UTC</createdTime>
+<generatorID>89A20FCA-67D2-3A32-952D-7A025EE20622</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>CB6A96F2-ACB9-A424-9233-1C1996691BA8</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>

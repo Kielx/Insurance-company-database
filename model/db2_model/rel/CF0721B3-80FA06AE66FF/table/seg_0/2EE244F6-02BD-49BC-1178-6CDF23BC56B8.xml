@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26641B51-72F9-3672-F4A4-71BCFFDDC555" name="phone_number_type">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EE244F6-02BD-49BC-1178-6CDF23BC56B8" name="street">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
-<generatorID>F397AE5B-ED70-7178-92C0-3F120B47A052</generatorID>
+<createdTime>2022-11-15 12:33:38 UTC</createdTime>
+<generatorID>62C9558D-E260-177D-6C47-66E75848BBB2</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="BD5CB066-7D10-7F2A-A147-371749011B81">
+<Column name="id" id="BC538CA3-0FDA-319C-480D-AE2F2F38B7DE">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
-<generatorID>0893C035-A73B-39AC-0A20-019AAC8C8010</generatorID>
+<createdTime>2022-11-15 12:33:38 UTC</createdTime>
+<generatorID>12F1CFA6-3837-BF0D-D70B-8001D8BE4676</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -19,10 +19,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="phone_type_name" id="A2D5E817-A607-529E-560A-DE5DF4237AD1">
+<Column name="name" id="7BF338C8-8B24-AA2C-2DA5-FFB6009797D5">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
-<generatorID>4A2CEC85-2961-5610-E1F7-D565D57009B7</generatorID>
+<createdTime>2022-11-15 12:33:38 UTC</createdTime>
+<generatorID>703151E1-300D-493C-8A31-79E65B4E1648</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -32,16 +32,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D3D23550-3B46-E75B-7C8C-DAEE1F6ECDC1" name="phone_number_type_PK">
+<ind_PK_UK id="964974C4-30BD-67C9-3138-3694D60099E2" name="street_PK">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-15 10:17:24 UTC</createdTime>
-<generatorID>C198173B-0A00-5168-45EE-71A424772D98</generatorID>
+<createdTime>2022-11-15 12:33:38 UTC</createdTime>
+<generatorID>AF46F87A-1F13-9CF1-11F9-8B83228DCF8F</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BD5CB066-7D10-7F2A-A147-371749011B81"/>
+<colUsage columnID="BC538CA3-0FDA-319C-480D-AE2F2F38B7DE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

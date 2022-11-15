@@ -63,6 +63,62 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="63E407E0-5A16-A185-E29D-D3A1B0AA34EC">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:29:37 UTC</createdTime>
+<generatorID>23A9CAAF-5ABD-F266-7A35-33A0B6D5423D</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>FC7C118F-93FA-8C3F-630B-33E774A6BED2</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="A5AE04A0-2892-73AC-F344-49531805A536">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:29:56 UTC</createdTime>
+<generatorID>0B17ACE1-F00C-0BB0-4B7F-87484E460D3C</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>2A486243-A4E5-4EC4-2ADA-E6CD28349ACD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="869D505A-561B-0F5A-F1FB-EDE90569FFE1">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:30:24 UTC</createdTime>
+<generatorID>789C49A8-DB3A-0466-1EF0-9C48CAEDCA80</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>12F1CFA6-3837-BF0D-D70B-8001D8BE4676</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id4" id="02793C3E-D615-4664-E197-8FDA7C57E809">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:30:34 UTC</createdTime>
+<generatorID>912C2F99-B2A5-2881-BDF5-E8D255CC8842</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>E1A72132-261B-E840-16F7-F8169CACCCE7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="FE20D1AB-2DB1-B3A5-CA88-D0ED54741F9F" name="user PK">

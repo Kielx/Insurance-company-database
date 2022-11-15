@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76AF0792-1AFA-C03D-80E9-B8F48BDA34C9" name="policy_type">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:12:34 UTC</createdTime>
+<generatorID>C3B872B6-B8D7-35C9-1C1D-385442AAE4DF</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0810D41E-ED98-00D8-718B-0B842C2105FE">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:12:34 UTC</createdTime>
+<generatorID>3533B05E-9700-1DA2-73EC-02EA0965EEF5</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="policy_type" id="98225F63-31CC-313C-B8A1-7037EB868AC5">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:12:34 UTC</createdTime>
+<generatorID>36CBAE76-D9B9-2B89-A8C4-701809E75590</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8045D86C-1F80-75E5-1F4C-A4192F0C1022" name="policy_type_PK">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:12:34 UTC</createdTime>
+<generatorID>97811AC9-32C7-2CA9-CCAA-18D2D6F4C548</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0810D41E-ED98-00D8-718B-0B842C2105FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
