@@ -30,6 +30,17 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="policy_base_price" id="76BC693A-C6D8-52DC-6CE7-6D094ADA04FE">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 13:24:11 UTC</createdTime>
+<generatorID>1D70028D-AD4D-6840-0BF9-78AA67EB66CE</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="8045D86C-1F80-75E5-1F4C-A4192F0C1022" name="policy_type_PK">

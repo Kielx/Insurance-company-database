@@ -39,14 +39,27 @@
 <domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="policy_base_price" id="1D70028D-AD4D-6840-0BF9-78AA67EB66CE">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 13:20:14 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="97811AC9-32C7-2CA9-CCAA-18D2D6F4C548" name="policy_type PK">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 12:09:55 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

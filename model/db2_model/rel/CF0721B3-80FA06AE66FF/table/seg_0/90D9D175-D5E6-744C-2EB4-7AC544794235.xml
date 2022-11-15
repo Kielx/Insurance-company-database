@@ -89,7 +89,7 @@
 <colUsage columnID="D60F8477-72D1-C745-63A7-1F6A371DCDAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7F104121-E0CA-6886-EAE2-175AFC9AA57C" name="client_phone_number_client_FK">
+<ind_PK_UK id="7F104121-E0CA-6886-EAE2-175AFC9AA57C" name="phone_number_client_FK">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>0719981F-306B-55BB-B2BB-90E425BB9F86</generatorID>
@@ -100,7 +100,7 @@
 <colUsage columnID="6576E1CD-75F4-449B-4EFB-4FCFDAEE1CA7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E2365E59-A6C4-CFF0-0A8B-684EAC0F18C9" name="client_phone_number_phone_number_type_FK">
+<ind_PK_UK id="E2365E59-A6C4-CFF0-0A8B-684EAC0F18C9" name="phone_number_phone_number_type_FK">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 11:59:42 UTC</createdTime>
 <generatorID>92CDA3A9-6512-E3A3-29B3-283D47871A44</generatorID>
