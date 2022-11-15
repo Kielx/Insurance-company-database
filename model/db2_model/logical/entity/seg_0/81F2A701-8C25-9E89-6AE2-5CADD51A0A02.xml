@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3B872B6-B8D7-35C9-1C1D-385442AAE4DF" name="policy_type">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:09:39 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="81F2A701-8C25-9E89-6AE2-5CADD51A0A02" name="coverage">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 18:45:29 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="3533B05E-9700-1DA2-73EC-02EA0965EEF5">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:09:50 UTC</createdTime>
+<Attribute name="id" id="45A3A097-A6BF-9218-CA59-5EF7C6E2B0FD">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 18:45:36 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -27,21 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="policy_type" id="36CBAE76-D9B9-2B89-A8C4-701809E75590">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:09:57 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="policy_base_price" id="1D70028D-AD4D-6840-0BF9-78AA67EB66CE">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 13:20:14 UTC</createdTime>
+<Attribute name="coverage_level" id="FFBDA4C4-3942-A9EB-BC0C-A3791D8C7348">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 18:45:52 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -53,9 +41,9 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="97811AC9-32C7-2CA9-CCAA-18D2D6F4C548" name="policy_type PK">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:09:55 UTC</createdTime>
+<identifier id="AEECB5ED-7F53-E50A-00AD-1B03162F4572" name="coverage PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 18:45:47 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -63,7 +51,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>3533B05E-9700-1DA2-73EC-02EA0965EEF5</attributeRef>
+<attributeRef>45A3A097-A6BF-9218-CA59-5EF7C6E2B0FD</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

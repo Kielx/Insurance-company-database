@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE5A0FAA-21A6-6574-8359-0F824553B43F" name="type_coverage_feature">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>8834F0CE-F5B5-A0AD-4E61-BED38115FD7F</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="635E16B9-3C14-FE27-25D8-B15FCF7EB26C">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>CDEBFC06-7BAB-70E0-54AA-A5A555D4E993</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type_coverage_id" id="2D70B2F1-BA61-3D47-0071-049878EACE0F">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>B266C438-88D8-C261-457E-D99CB9228C4C</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="325FA93A-EB59-913E-1892-BE8EF90AD90A" referredColumn="4D71712E-8992-A4E2-2D7B-B88C110D724E"/>
+</associations>
+</Column>
+<Column name="type_coverage_policy_type_id" id="BD572059-BAEE-F098-BD24-1756600CFD52">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>6B1F5CC5-5EB6-2D74-E99C-9EB7D527AC88</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="325FA93A-EB59-913E-1892-BE8EF90AD90A" referredColumn="5B2FA209-185F-6C82-1545-C6899CB5EAEE"/>
+</associations>
+</Column>
+<Column name="type_coverage_coverage_id" id="02E0FFF1-69F9-F2F4-023B-979C6224A011">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>937CDAD6-8A01-9097-553B-D9E8D893564B</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="325FA93A-EB59-913E-1892-BE8EF90AD90A" referredColumn="C4CC5965-AC93-0DEB-62A3-68FEED75081E"/>
+</associations>
+</Column>
+<Column name="id_1" id="A804A82F-A1AB-CD10-C896-E32FEF50EDA0">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>8987A819-2CFD-BF0A-D2A0-CAA04FF50379</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="feature_id" id="24F107D9-A3D5-2767-1F56-E5657C08A310">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>5EA932A2-0617-4F4F-0353-03662BE24A7B</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6F05164-FF53-4726-2F3F-10AAD3D826C5" referredColumn="F4ECE4D7-0B01-0432-6EFD-35E3099B08A3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7635A283-DCD3-FC4D-5846-AC2FF6B6114E" name="type_coverage_feature_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>352BAEC4-50B9-991B-AC50-6933295D0318</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="635E16B9-3C14-FE27-25D8-B15FCF7EB26C"/>
+<colUsage columnID="2D70B2F1-BA61-3D47-0071-049878EACE0F"/>
+<colUsage columnID="BD572059-BAEE-F098-BD24-1756600CFD52"/>
+<colUsage columnID="02E0FFF1-69F9-F2F4-023B-979C6224A011"/>
+<colUsage columnID="A804A82F-A1AB-CD10-C896-E32FEF50EDA0"/>
+<colUsage columnID="24F107D9-A3D5-2767-1F56-E5657C08A310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BB3B860-4BA3-0409-F7E8-498A400BC4BB" name="type_coverage_feature_type_coverage_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>7852737B-5EE4-0946-18E1-42E585EBB733</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D70B2F1-BA61-3D47-0071-049878EACE0F"/>
+<colUsage columnID="BD572059-BAEE-F098-BD24-1756600CFD52"/>
+<colUsage columnID="02E0FFF1-69F9-F2F4-023B-979C6224A011"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2D4CA9C-47C7-1240-9D3B-FC8BD1CEA734" name="type_coverage_feature_feature_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>AC96F6F2-A046-FD08-A0CA-1C167E3B53FF</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24F107D9-A3D5-2767-1F56-E5657C08A310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

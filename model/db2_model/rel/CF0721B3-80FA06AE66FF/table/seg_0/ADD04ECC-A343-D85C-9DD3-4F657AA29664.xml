@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADD04ECC-A343-D85C-9DD3-4F657AA29664" name="city">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>0D8A1167-4E1B-1EE9-C239-1E9F5F6A16F1</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0604A8BD-AD91-4105-22A2-F4582DB12E83">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>2A486243-A4E5-4EC4-2ADA-E6CD28349ACD</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="27EA9550-51AC-C8D1-40A7-8C7FAEF1EBB6">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>58FB171E-C3D3-B23F-8C2B-24ACB34DA837</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83F32536-A5E1-A3E9-CA16-EAF1338DE67E" name="city_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>1201DE94-5F98-75CE-082B-CE00CBBC4ADA</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0604A8BD-AD91-4105-22A2-F4582DB12E83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

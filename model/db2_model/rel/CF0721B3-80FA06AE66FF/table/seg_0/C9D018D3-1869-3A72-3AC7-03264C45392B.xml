@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9D018D3-1869-3A72-3AC7-03264C45392B" name="region">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>DF46DB38-5E53-E374-DAB6-F52ACD15E176</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C11666CD-73F2-8DDC-E5CB-B85E993AC7FB">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>FC7C118F-93FA-8C3F-630B-33E774A6BED2</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="6B5BFC10-A5AF-44D7-36BA-DC4724A0054E">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>8F49B4BC-4DC2-BAC2-6218-A26665AB5108</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0B74984-1662-DAF6-CCC2-4AB7DECC6D22" name="region_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-15 19:56:55 UTC</createdTime>
+<generatorID>2869D343-34B9-D151-7496-BBA3A3251E97</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C11666CD-73F2-8DDC-E5CB-B85E993AC7FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
