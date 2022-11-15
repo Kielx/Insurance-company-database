@@ -1,0 +1,10 @@
+INSERT INTO CLIENT (id, first_name, last_name, date_of_birth) VALUES (1, 'A', 'B', (TO_DATE('2003/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss')));
+INSERT INTO CLIENT (id, first_name, last_name, date_of_birth) VALUES (2, 'C', 'D', (TO_DATE('2012/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss')));
+INSERT INTO phone_number_type (id, phone_type_name) VALUES (1, 'DOMOWY');
+INSERT INTO phone_number_type (id, phone_type_name) VALUES (2, 'KOMORKOWY');
+INSERT INTO client_phone_number (id, phone_number, client_id, phone_number_type_id) VALUES (1, 726940229, 1, 2);
+INSERT INTO client_phone_number (id, phone_number, client_id, phone_number_type_id) VALUES (2, +3841235, 1, 1);
+INSERT INTO client_phone_number (id, phone_number, client_id, phone_number_type_id) VALUES (3, +384580, 2, 1);
+
+SELECT * FROM client_phone_number;
+SELECT * FROM client, client_phone_number WHERE client.id = client_phone_number.client_id AND client_phone_number.phone_number_type_id = 2;
