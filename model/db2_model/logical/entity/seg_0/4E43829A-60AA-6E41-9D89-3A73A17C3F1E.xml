@@ -27,7 +27,7 @@
 <domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name" id="03B6B158-E701-D221-7404-F141363B5953">
+<Attribute name="first_name" id="03B6B158-E701-D221-7404-F141363B5953">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-14 14:07:04 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -37,6 +37,30 @@
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="99B8C852-B425-C21A-9FB0-F9AEA9E6D845">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 08:51:29 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_of_birth" id="6C404F91-B3AA-CAE7-3F70-5027F4E1E2BC">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 08:51:39 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

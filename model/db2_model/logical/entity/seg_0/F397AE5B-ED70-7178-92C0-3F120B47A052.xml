@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B8F6EE7-F9EA-2669-7545-234A4321D928" name="client">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F397AE5B-ED70-7178-92C0-3F120B47A052" name="phone_number_type">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:10 UTC</createdTime>
+<createdTime>2022-11-15 09:17:42 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="E63A7F8C-0955-41DA-2701-38A17326D291">
+<Attribute name="id" id="0893C035-A73B-39AC-0A20-019AAC8C8010">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:34 UTC</createdTime>
+<createdTime>2022-11-15 09:17:50 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -27,9 +27,9 @@
 <domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="first_name" id="2E71B527-F235-2593-2D87-3D64BD4339DE">
+<Attribute name="phone_type_name" id="4A2CEC85-2961-5610-E1F7-D565D57009B7">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:47 UTC</createdTime>
+<createdTime>2022-11-15 09:17:59 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -37,37 +37,13 @@
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="last_name" id="39107D55-D036-62B5-26B6-CC505678F41E">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 08:50:28 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="date_of_birth" id="441C0D03-E37E-1E2F-8534-ED40BD755CD3">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 08:50:53 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="FE20D1AB-2DB1-B3A5-CA88-D0ED54741F9F" name="user PK">
+<identifier id="C198173B-0A00-5168-45EE-71A424772D98" name="phone_number_type PK">
 <createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:43 UTC</createdTime>
+<createdTime>2022-11-15 09:17:56 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -75,7 +51,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E63A7F8C-0955-41DA-2701-38A17326D291</attributeRef>
+<attributeRef>0893C035-A73B-39AC-0A20-019AAC8C8010</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

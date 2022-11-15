@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26641B51-72F9-3672-F4A4-71BCFFDDC555" name="phone_number_type">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<generatorID>F397AE5B-ED70-7178-92C0-3F120B47A052</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="BD5CB066-7D10-7F2A-A147-371749011B81">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<generatorID>0893C035-A73B-39AC-0A20-019AAC8C8010</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_type_name" id="A2D5E817-A607-529E-560A-DE5DF4237AD1">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<generatorID>4A2CEC85-2961-5610-E1F7-D565D57009B7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3D23550-3B46-E75B-7C8C-DAEE1F6ECDC1" name="phone_number_type_PK">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 10:17:24 UTC</createdTime>
+<generatorID>C198173B-0A00-5168-45EE-71A424772D98</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD5CB066-7D10-7F2A-A147-371749011B81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
