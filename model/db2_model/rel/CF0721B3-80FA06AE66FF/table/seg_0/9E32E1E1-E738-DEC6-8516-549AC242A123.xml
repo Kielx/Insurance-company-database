@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E32E1E1-E738-DEC6-8516-549AC242A123" name="insurance">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>6188DADE-F9F2-7EE0-9A8D-33A5C830DCE1</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="insurance_id" id="2C1FD0D5-ED6D-DF74-0E85-29470553FF63">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>09CC2F93-C690-3D63-26A9-54457EA417AE</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insurance_number" id="13ABAC5A-9DB4-645F-39C5-E36BADB6B1E3">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>17B29B7D-C26B-E651-86F6-6E8AF8CD03F3</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_id" id="0713F8D0-05DC-F82D-0016-A09C0C75C920">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>45C69FC3-28E4-4A01-6CB3-C715D48434BB</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B255C2E-0A58-AF74-C51F-F61D4911E11B" referredColumn="8EBA4E83-C0E4-896C-922F-08ABE629D667"/>
+</associations>
+</Column>
+<Column name="employee_id" id="8905DB79-F3A4-1A79-E0A1-8DD7A3C1B529">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>A248A650-2368-B0AD-7ED7-92547D54C0F0</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46FE5EE4-87A7-8596-C479-5DFA62D938D5" referredColumn="C4F79487-3E25-7E66-1810-50EE1B29CAC5"/>
+</associations>
+</Column>
+<Column name="begin_date" id="0455472C-2AF5-F988-3B9F-4587803A6B40">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>1375E63D-38E5-AEF0-24C1-0D22661B90B9</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="expiration_date" id="785D8AA0-09A1-55D6-8FC6-DDFA0602A97F">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>82C5DDB8-ACCC-A233-8150-1E32ADD9B9F6</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coverage_id" id="4E9347F6-2646-C5EF-E9AD-B1B8755120EF">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>EC5F9247-AC71-819C-BB59-4B3E2F8D1E26</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B59DEB3A-A105-40B1-0C3A-3D0EA26599DD" referredColumn="FD842389-657D-66EE-7A2E-BD6DB464905D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8F0EE9F-430A-F5C6-91F7-888664DD1B77" name="insurance_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>07517CCC-DB3F-25CE-DAD1-155F9EC0C5A5</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C1FD0D5-ED6D-DF74-0E85-29470553FF63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90F627DC-B141-8107-E91D-81283B725974" name="insurance_client_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>E067212A-8EFC-483D-2D8B-1D29A48F0004</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0713F8D0-05DC-F82D-0016-A09C0C75C920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC05511C-4543-ADF7-6983-20DE4272D18B" name="insurance_employee_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>CCFE4EED-01B1-FF22-724F-EB2BE9DD4349</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8905DB79-F3A4-1A79-E0A1-8DD7A3C1B529"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49B88925-5A30-F838-E626-D3F35537EED6" name="insurance_coverage_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>ABEE9EE1-216E-39C4-492C-78BF4F2DABF7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E9347F6-2646-C5EF-E9AD-B1B8755120EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

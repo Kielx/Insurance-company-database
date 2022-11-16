@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E43829A-60AA-6E41-9D89-3A73A17C3F1E" name="agent">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E43829A-60AA-6E41-9D89-3A73A17C3F1E" name="employee">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-14 14:06:47 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="CB6A96F2-ACB9-A424-9233-1C1996691BA8">
+<Attribute name="employee_id" id="CB6A96F2-ACB9-A424-9233-1C1996691BA8">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-14 14:06:56 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -24,7 +24,7 @@
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="first_name" id="03B6B158-E701-D221-7404-F141363B5953">
@@ -36,7 +36,7 @@
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="last_name" id="99B8C852-B425-C21A-9FB0-F9AEA9E6D845">
@@ -48,7 +48,7 @@
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B1B7192D-A011-03E8-D6B2-18DEF6B2F3A5</domain>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="date_of_birth" id="6C404F91-B3AA-CAE7-3F70-5027F4E1E2BC">
@@ -63,52 +63,10 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="4564D710-C59D-E797-0932-995F61F37EA2">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:30:54 UTC</createdTime>
-<generatorID>05E9E907-36DC-0B0C-3E0F-E304E52619CB</generatorID>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<referedAttribute>FC7C118F-93FA-8C3F-630B-33E774A6BED2</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id2" id="F54535C1-C41E-7D4A-F646-2BFF957BC7DD">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:31:10 UTC</createdTime>
-<generatorID>E44D583E-9B46-96F2-891B-9D699576771E</generatorID>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<referedAttribute>2A486243-A4E5-4EC4-2ADA-E6CD28349ACD</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id3" id="B180CB5A-AC0F-A527-0B5B-7344C50CA38C">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:31:16 UTC</createdTime>
-<generatorID>8E44D3E7-CAD3-B978-9E66-61F2E12369C4</generatorID>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<referedAttribute>12F1CFA6-3837-BF0D-D70B-8001D8BE4676</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id4" id="88C4E795-BC24-CC6E-1F0F-59C8B2E0D55A">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 12:31:23 UTC</createdTime>
-<generatorID>FD40C6C5-1103-2955-7A4C-5441898FCFBB</generatorID>
+<Attribute name="address_id" id="98A8DA9A-ACDD-371B-9D9D-6935A9820204">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:10:55 UTC</createdTime>
+<generatorID>95C2D293-B581-C8B0-2D11-A37BD88D88B0</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -116,7 +74,7 @@
 <referedAttribute>E1A72132-261B-E840-16F7-F8169CACCCE7</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F47CC927-EB04-F94E-E412-13236FA536F0" name="coverageGroup">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>2980E2D3-81F6-67DB-5AC9-8A8DA11F02BB</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="coverageGroup_id" id="323786D3-A42E-0866-6348-6886AFE87B52">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>E6361551-A1CC-E287-DEF0-4D0AC5C5FB4E</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coverageGroup_name" id="6B4D81DB-5A74-62A7-1430-08D5DE25B009">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>0EC8A1D8-FD01-DE0D-3BF4-1CE55F60D075</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4333633-063C-29D3-69B6-C56C3FF7E97D" name="coverageGroup_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>93887615-0441-B7AA-E429-A27DFC19AFE0</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="323786D3-A42E-0866-6348-6886AFE87B52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

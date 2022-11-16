@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F397AE5B-ED70-7178-92C0-3F120B47A052" name="phoneType">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 09:17:42 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2980E2D3-81F6-67DB-5AC9-8A8DA11F02BB" name="coverageGroup">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:25:24 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="phoneType_id" id="0893C035-A73B-39AC-0A20-019AAC8C8010">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 09:17:50 UTC</createdTime>
+<Attribute name="coverageGroup_id" id="E6361551-A1CC-E287-DEF0-4D0AC5C5FB4E">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:25:59 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -27,9 +27,9 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="type_name" id="4A2CEC85-2961-5610-E1F7-D565D57009B7">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 09:17:59 UTC</createdTime>
+<Attribute name="coverageGroup_name" id="0EC8A1D8-FD01-DE0D-3BF4-1CE55F60D075">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:26:04 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -41,9 +41,9 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="C198173B-0A00-5168-45EE-71A424772D98" name="phone_number_type PK">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 09:17:56 UTC</createdTime>
+<identifier id="93887615-0441-B7AA-E429-A27DFC19AFE0" name="coverageGroup PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:26:03 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -51,7 +51,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0893C035-A73B-39AC-0A20-019AAC8C8010</attributeRef>
+<attributeRef>E6361551-A1CC-E287-DEF0-4D0AC5C5FB4E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

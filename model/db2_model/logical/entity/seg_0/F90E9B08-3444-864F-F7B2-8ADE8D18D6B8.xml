@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F90E9B08-3444-864F-F7B2-8ADE8D18D6B8" name="phone_number">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F90E9B08-3444-864F-F7B2-8ADE8D18D6B8" name="phone">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 08:54:27 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="8D7614BB-9F0D-1DCC-F956-3AABDDBC4A06">
+<Attribute name="phone_id" id="8D7614BB-9F0D-1DCC-F956-3AABDDBC4A06">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 09:10:59 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -24,7 +24,7 @@
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="phone_number" id="DF516798-3846-1775-F3A3-D571B30AA0F7">
@@ -34,12 +34,13 @@
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>4CB876AA-C065-C0D7-A9F3-3CB4CCCA469B</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id2" id="8BA5B21F-F29B-7B98-62B3-2680F98E7086">
+<Attribute name="client_id" id="8BA5B21F-F29B-7B98-62B3-2680F98E7086">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 09:21:31 UTC</createdTime>
 <generatorID>0719981F-306B-55BB-B2BB-90E425BB9F86</generatorID>
@@ -47,13 +48,15 @@
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>E63A7F8C-0955-41DA-2701-38A17326D291</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="21645232-966C-26F5-C2FC-EC16F3431988">
+<Attribute name="phoneType_id" id="21645232-966C-26F5-C2FC-EC16F3431988">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 10:17:09 UTC</createdTime>
 <generatorID>92CDA3A9-6512-E3A3-29B3-283D47871A44</generatorID>
@@ -62,12 +65,13 @@
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
 </engineerTo>
 <referedAttribute>0893C035-A73B-39AC-0A20-019AAC8C8010</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id3" id="CC3BBFFB-5B8D-D07F-F0F5-A477D035955C">
+<Attribute name="employee_id" id="CC3BBFFB-5B8D-D07F-F0F5-A477D035955C">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 12:24:02 UTC</createdTime>
 <generatorID>89A20FCA-67D2-3A32-952D-7A025EE20622</generatorID>
@@ -75,10 +79,12 @@
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>CB6A96F2-ACB9-A424-9233-1C1996691BA8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

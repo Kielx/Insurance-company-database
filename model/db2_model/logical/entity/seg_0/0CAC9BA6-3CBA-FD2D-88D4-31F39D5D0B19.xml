@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CAC9BA6-3CBA-FD2D-88D4-31F39D5D0B19" name="address_number">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CAC9BA6-3CBA-FD2D-88D4-31F39D5D0B19" name="address">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 12:28:22 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="E1A72132-261B-E840-16F7-F8169CACCCE7">
+<Attribute name="address_id" id="E1A72132-261B-E840-16F7-F8169CACCCE7">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 12:28:34 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -24,10 +24,58 @@
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C22A3581-59BD-9D69-872B-9E7A03AF82F0</domain>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="number" id="D3272D82-948D-8F11-4F91-F190C444E271">
+<Attribute name="country" id="75277F6F-DF0B-E8D5-AD40-09E76F84B367">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:00:32 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region" id="3CFA81DE-A746-9C5B-EE64-2AF70A2F700A">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:00:51 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="F35ABE2F-DE37-9565-68D0-0B21C97647BA">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:01:01 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street" id="3987A205-2D0F-DB8C-5515-05BC4CCF4F16">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 20:01:11 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address_number" id="D3272D82-948D-8F11-4F91-F190C444E271">
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 12:28:41 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
@@ -45,8 +93,9 @@
 <createdBy>745554</createdBy>
 <createdTime>2022-11-15 12:28:39 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

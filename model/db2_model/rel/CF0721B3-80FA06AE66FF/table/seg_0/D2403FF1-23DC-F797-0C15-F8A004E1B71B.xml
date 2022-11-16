@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2403FF1-23DC-F797-0C15-F8A004E1B71B" name="feature_coverage">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>3D2B80ED-803F-2630-7AF5-C2B61F82BBEF</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="feature_coverage_id" id="30BB6058-7AA7-8FBB-E922-E629C32E2B78">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>122ECCAF-42F2-434A-31FE-CF0A742289D7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coverage_id" id="3E0B36D6-13B9-ABC6-5888-B309E8661161">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>72A15B0E-A200-141F-19BE-F78BE2834D17</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D601B59-769E-5E1F-A2C1-7B4203B4FF86" referredColumn="FD842389-657D-66EE-7A2E-BD6DB464905D"/>
+</associations>
+</Column>
+<Column name="feature_id" id="09CC4A47-299D-FB17-4B85-8BE6D9DE7A71">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>38C70827-EC34-5FC9-3D35-28A521807241</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67475FC5-2B8C-3B92-890D-8EF9B91CF98F" referredColumn="1240951E-1850-5762-47BF-8A6A71735E7C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D12233A-4EDA-9415-DAA0-AF450AC30717" name="feature_coverage_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>88614336-CE92-585D-ADFC-65AFCE3142A2</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30BB6058-7AA7-8FBB-E922-E629C32E2B78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAC19E78-01DB-E69D-849A-9DA892757CFC" name="feature_coverage_coverage_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>85A620EC-D008-A5A5-37A6-80AC2BFFD976</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E0B36D6-13B9-ABC6-5888-B309E8661161"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C18FC571-1EAD-AB05-BF5C-483D4476C892" name="feature_coverage_feature_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-16 21:45:20 UTC</createdTime>
+<generatorID>5C86FC31-20E5-BDB6-1785-35EEE826C390</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09CC4A47-299D-FB17-4B85-8BE6D9DE7A71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
