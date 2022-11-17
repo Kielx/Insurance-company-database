@@ -17,3 +17,8 @@ SELECT feature.feature_name from feature
 SELECT insurance.insurance_number, coverage.coverage_name FROM insurance 
   JOIN coverage ON coverage.coverage_id = insurance.coverage_id
   WHERE coverage.coveragegroup_id = 1;
+  
+SELECT insurance.insurance_number FROM insurance 
+  JOIN coverage ON coverage.coverage_id = insurance.coverage_id
+  JOIN coveragegroup ON coveragegroup.coveragegroup_id = coverage.coveragegroup_id
+  WHERE coveragegroup.coveragegroup_name = 'Dom';

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FFDCD1D-0D34-193D-7739-3D8FC3F902E5" name="address">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>0CAC9BA6-3CBA-FD2D-88D4-31F39D5D0B19</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="address_id" id="E4855DA8-89BD-27EE-27AF-08BCF6FD585C">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>E1A72132-261B-E840-16F7-F8169CACCCE7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="A199871C-C32A-B8E2-6109-46C47D0D308A">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>75277F6F-DF0B-E8D5-AD40-09E76F84B367</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region" id="BA7946C8-F70C-D776-36C1-4158A1291231">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>3CFA81DE-A746-9C5B-EE64-2AF70A2F700A</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="81B79560-FB95-3375-10DD-0FC39D29DA6E">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>F35ABE2F-DE37-9565-68D0-0B21C97647BA</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="04A69D64-9AC7-12EA-D1F4-D3E7F670124E">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>3987A205-2D0F-DB8C-5515-05BC4CCF4F16</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address_number" id="EED2A105-22CE-381A-EE6E-1F825E9229DE">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>D3272D82-948D-8F11-4F91-F190C444E271</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AFCDCA2F-69F8-64F0-5856-56D7D9707AA8" name="address_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>BF50940F-0231-34E9-F7DA-ED17800523B7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4855DA8-89BD-27EE-27AF-08BCF6FD585C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

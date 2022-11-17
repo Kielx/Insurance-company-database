@@ -107,6 +107,20 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="insuredItem_id" id="C8D5011C-717F-BD45-C837-48041855A160">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 19:45:07 UTC</createdTime>
+<generatorID>6C1BBDCD-C860-E2BC-1092-F34CA0C77C16</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>DEC27EBC-BDC8-A363-579D-DD9357217CBF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="07517CCC-DB3F-25CE-DAD1-155F9EC0C5A5" name="policy PK">

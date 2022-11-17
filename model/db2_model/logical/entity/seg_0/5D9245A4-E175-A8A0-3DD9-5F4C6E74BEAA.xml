@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D9245A4-E175-A8A0-3DD9-5F4C6E74BEAA" name="House">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:33:31 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="insuredItem_id" id="01E85504-1FB8-803E-D5B4-953C74C40ED4">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:32:00 UTC</createdTime>
+<generatorID>C1679863-0FDD-45F2-B853-9AD1C82183C8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>DEC27EBC-BDC8-A363-579D-DD9357217CBF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="house_name" id="9E5C3206-8636-818C-5612-3BEE57D08D0B">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:33:42 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="coverageGroup_id" id="6E113A78-2E73-DB20-08F5-EE60DADA1868">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:02:40 UTC</createdTime>
+<generatorID>978EAEA4-3B62-1CFB-BC8F-0CFB00C3D8B1</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>E6361551-A1CC-E287-DEF0-4D0AC5C5FB4E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DC579415-2A6E-6B0D-7F7C-7BEBB0E696D5" name="House PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:33:52 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>01E85504-1FB8-803E-D5B4-953C74C40ED4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

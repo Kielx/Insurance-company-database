@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A4A3A1E-9A0B-B27F-CE5F-9A234652F67A" name="life">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:38:00 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="insuredItem_id" id="05181F0C-9792-C8E6-771D-0A41D74B705C">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:32:38 UTC</createdTime>
+<generatorID>7443AB36-2210-8425-B8BB-8BE268F268C7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>DEC27EBC-BDC8-A363-579D-DD9357217CBF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="coverageGroup_id" id="77BEA7B5-3308-B4BF-FE28-114E07C27EB5">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:04:18 UTC</createdTime>
+<generatorID>3CE12F18-10D9-98FB-62A3-FC50829E6800</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>E6361551-A1CC-E287-DEF0-4D0AC5C5FB4E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="04B13C51-5A39-7E6A-7906-062E13DB5EA8" name="life PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:38:09 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>05181F0C-9792-C8E6-771D-0A41D74B705C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

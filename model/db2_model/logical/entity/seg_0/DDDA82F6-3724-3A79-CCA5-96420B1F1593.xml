@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDDA82F6-3724-3A79-CCA5-96420B1F1593" name="item">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:38:30 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="insuredItem_id" id="73682A87-0741-110C-2ED2-EE2D844AF279">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:32:53 UTC</createdTime>
+<generatorID>5D7A8E28-ECEE-730F-7D17-B9261778C862</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>DEC27EBC-BDC8-A363-579D-DD9357217CBF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_name" id="D70953D3-8962-A395-EA7B-40529F5BE4A1">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:38:43 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="coverageGroup_id" id="4D3FD071-B9C5-BB70-971E-076135D317F0">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:04:24 UTC</createdTime>
+<generatorID>CF26B529-12A2-0C1E-C6FF-3F2CCDB4D788</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>E6361551-A1CC-E287-DEF0-4D0AC5C5FB4E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D71346FE-3E14-23B3-3541-2F2DA8F0062B" name="item PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 20:38:42 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>73682A87-0741-110C-2ED2-EE2D844AF279</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

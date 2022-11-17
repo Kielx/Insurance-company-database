@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39BC8992-80A1-3CA3-7068-43071EDF33C2" name="life">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>8A4A3A1E-9A0B-B27F-CE5F-9A234652F67A</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="insuredItem_id" id="03677320-5231-B2B0-D2F6-251C9AE6B72E">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>05181F0C-9792-C8E6-771D-0A41D74B705C</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5A99C50-AA6C-99F8-0C92-BF756B6ADF37" referredColumn="C067812B-399B-7F95-4302-970415FCFF12"/>
+</associations>
+</Column>
+<Column name="coverageGroup_id" id="3EC5A6F7-B599-1B18-9EDC-F532A21D2AA7">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>77BEA7B5-3308-B4BF-FE28-114E07C27EB5</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B3A6088-F93D-7EC6-497F-38A62A2D10BB" referredColumn="B7B65332-D976-668B-CDA0-DE1F68DF8F44"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="741205E8-E1BB-0242-12EB-C0954641806E" name="life_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>04B13C51-5A39-7E6A-7906-062E13DB5EA8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03677320-5231-B2B0-D2F6-251C9AE6B72E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1947CF86-4999-961C-EF02-C8287AB10B29" name="life_coverageGroup_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>3CE12F18-10D9-98FB-62A3-FC50829E6800</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EC5A6F7-B599-1B18-9EDC-F532A21D2AA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C6BD7AA-0B74-055F-78F3-A806C9B519F9" name="life_insuredItem_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-17 21:34:34 UTC</createdTime>
+<generatorID>7443AB36-2210-8425-B8BB-8BE268F268C7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03677320-5231-B2B0-D2F6-251C9AE6B72E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
