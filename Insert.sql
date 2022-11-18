@@ -34,5 +34,12 @@ INSERT INTO feature_coverage (feature_coverage_id, coverage_id, feature_id) VALU
 
 INSERT INTO feature_coverage (feature_coverage_id, coverage_id, feature_id) VALUES (7,3,6);
 
-INSERT INTO insurance (insurance_id, insurance_number, client_id, employee_id, begin_date, expiration_date, coverage_id) VALUES (2,'000002',1,1, TO_DATE('2022/11/16', 'yyyy/mm/dd'),TO_DATE('2023/11/16', 'yyyy/mm/dd'),3);
-INSERT INTO insurance (insurance_id, insurance_number, client_id, employee_id, begin_date, expiration_date, coverage_id) VALUES (1,'000001',1,1, TO_DATE('2022/11/16', 'yyyy/mm/dd'),TO_DATE('2023/11/16', 'yyyy/mm/dd'),1);
+INSERT INTO insuredItem (insureditem_id, coveragegroup_id) VALUES (1, 1);
+INSERT INTO insuredItem (insureditem_id, coveragegroup_id) VALUES (2, 2);
+
+INSERT INTO house (insureditem_id, house_name, coverageGroup_id) VALUES (1, 'Dom na przedmiesciach', 1);
+INSERT INTO vehicle (insureditem_id, vehicle_name, coverageGroup_id) VALUES (2, 'Skoda Fabia', 2);
+
+INSERT INTO insurance (insurance_id, insurance_number, client_id, employee_id, begin_date, expiration_date, coverage_id, insuredItem_id) VALUES (2,'000002',1,1, TO_DATE('2022/11/16', 'yyyy/mm/dd'),TO_DATE('2023/11/16', 'yyyy/mm/dd'),3, 1);
+INSERT INTO insurance (insurance_id, insurance_number, client_id, employee_id, begin_date, expiration_date, coverage_id, insuredItem_id) VALUES (1,'000001',1,1, TO_DATE('2022/11/16', 'yyyy/mm/dd'),TO_DATE('2023/11/16', 'yyyy/mm/dd'),1, 2);
+
