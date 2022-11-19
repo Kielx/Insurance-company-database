@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A0810D7D-3804-E20E-1E40-6EF9F58C73C7" containerWithKeyObject="DC90BD6C-A7CB-1B5A-9071-EF363881CD5A" localFKIndex="41B1BCCE-8CE1-62D6-FD60-329CD7771A9D" name="life_insuredItem_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>7443AB36-2210-8425-B8BB-8BE268F268C7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<referredTableLongName>insuredItem</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>1163AFFF-D423-D202-F7A5-04219318E44F</referredTableID>
+<keyObject>EDF202BA-BAED-C435-4F18-7F2A38C7DC98</keyObject>
+<referredKeyID>EDF202BA-BAED-C435-4F18-7F2A38C7DC98</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>insuredItem_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

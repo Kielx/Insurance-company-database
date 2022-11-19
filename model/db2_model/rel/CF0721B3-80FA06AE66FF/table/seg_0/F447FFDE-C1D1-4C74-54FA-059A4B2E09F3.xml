@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F447FFDE-C1D1-4C74-54FA-059A4B2E09F3" name="client">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>5B8F6EE7-F9EA-2669-7545-234A4321D928</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="client_id" id="A3332E99-FF6E-6840-3B94-108E0F2478B1">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>E63A7F8C-0955-41DA-2701-38A17326D291</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="7F62C729-AE98-71B4-2F4D-4ED39A21B1B3">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>2E71B527-F235-2593-2D87-3D64BD4339DE</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="01419027-0D55-14B4-8A61-AA77D6C2F793">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>39107D55-D036-62B5-26B6-CC505678F41E</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_birth" id="10813B69-9995-FAC5-D06B-BD6041FAB732">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>441C0D03-E37E-1E2F-8534-ED40BD755CD3</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_id" id="E6C76655-B774-08B3-0EE6-147D3E1A474C">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>1BD87E0B-ED76-BC0D-31BA-61C131BAC342</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D68A73F-43B5-6EAA-2987-792D897AC60E" referredColumn="77031015-4520-1540-108D-04BA8161C097"/>
+</associations>
+</Column>
+<Column name="region_id" id="9C6B3269-8BCA-519C-B102-4354DD614407">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>81D84640-9A4C-AC60-F005-82A84E1715EB</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="436F506C-C842-11B4-0B96-0C2E2CEC3848" referredColumn="B4D097B8-0EC5-4378-9C5A-CBAE3C7268D3"/>
+</associations>
+</Column>
+<Column name="city_id" id="9C1BDDBA-0A6A-2706-FEA8-2CCEBB2B7335">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>5B3DFA6F-A02B-2802-47E0-4F152D08B5B8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B664A385-5BEF-19D6-2C45-AB1156BFDDD5" referredColumn="3A6C4AFF-082A-936D-53CD-920E0ABE5668"/>
+</associations>
+</Column>
+<Column name="street_id" id="6C5B1A4F-A43B-985F-9494-B4600EDF0B4B">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>0D00905B-C1C6-8815-FFDA-CE11E7148247</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="711C4A79-5308-9B3B-954B-77257E1C5F22" referredColumn="84AF20B1-A446-2954-0BB0-3E6FB8C24D05"/>
+</associations>
+</Column>
+<Column name="houseNr_id" id="0C9FECC2-4290-A387-301C-250128C95A57">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>2BCD3717-79FF-265A-69E1-63EEE3DA5EC4</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DC0E523-6E7C-BE6D-FEB1-D25187AD3C3B" referredColumn="991D0546-471B-CF39-D3F5-DDAFB49194B4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4D951C5-40B8-506A-2E23-6798532F2C94" name="client_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>FE20D1AB-2DB1-B3A5-CA88-D0ED54741F9F</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3332E99-FF6E-6840-3B94-108E0F2478B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D46EAA87-EF74-6EB8-6680-8C351ED7D14B" name="client_country_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>7C3BE9B1-BFAF-49FE-2A9A-5CE0C8570B14</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6C76655-B774-08B3-0EE6-147D3E1A474C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="922C6B69-9D8B-EC43-19AE-0A332DFAB0DC" name="client_region_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>91A544B3-D05E-86BD-E839-7DB60400F444</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C6B3269-8BCA-519C-B102-4354DD614407"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01B4D2D6-7358-A847-B513-73DEC0A942EB" name="client_city_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>1D081B6B-57C5-AB22-CB35-43B1BFE9840F</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C1BDDBA-0A6A-2706-FEA8-2CCEBB2B7335"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89B31AA5-4135-C320-0001-D27C01851B47" name="client_street_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>120B7C7F-8A90-D7D3-6FEE-4EF31C303170</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C5B1A4F-A43B-985F-9494-B4600EDF0B4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C667C70B-0AB1-F326-6F5B-CBB31375D1FA" name="client_houseNr_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>5F1494E7-C377-E228-F099-89FB564E2562</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C9FECC2-4290-A387-301C-250128C95A57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

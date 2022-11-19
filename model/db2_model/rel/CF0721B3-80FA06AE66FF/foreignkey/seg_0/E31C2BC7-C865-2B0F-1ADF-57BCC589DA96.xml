@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E31C2BC7-C865-2B0F-1ADF-57BCC589DA96" containerWithKeyObject="DC90BD6C-A7CB-1B5A-9071-EF363881CD5A" localFKIndex="67252071-8D7F-BCE6-F52F-1C6D4ADD0E16" name="life_coverageGroup_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>3CE12F18-10D9-98FB-62A3-FC50829E6800</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<referredTableLongName>coverageGroup</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>6986E25E-5FDD-8C79-B7D8-36840FC04662</referredTableID>
+<keyObject>0107AC7D-5720-69ED-BCCE-09CDA8A0E9FA</keyObject>
+<referredKeyID>0107AC7D-5720-69ED-BCCE-09CDA8A0E9FA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>coverageGroup_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

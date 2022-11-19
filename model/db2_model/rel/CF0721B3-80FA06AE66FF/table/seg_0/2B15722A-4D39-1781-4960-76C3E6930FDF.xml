@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B15722A-4D39-1781-4960-76C3E6930FDF" name="Vehicle">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>3580860C-7989-3B44-A6A4-FB20BF05C872</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="insuredItem_id" id="967E3DB6-A93A-6CB9-E5C0-5EDB64FB8A42">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>3943FFF3-0B53-63BF-9668-46058362B1C2</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="806F8ADC-795A-E3E5-3FA9-DB7BD5A4B539" referredColumn="F193D9F5-48E4-6C39-782D-9AFF53427AB7"/>
+</associations>
+</Column>
+<Column name="vehicle_name" id="1FB545C1-13A4-C1F8-FC47-5608260A3847">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>80371A1B-530D-9766-AD5D-F93F33603173</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coverageGroup_id" id="5972E069-0ABD-21B3-3AF2-B7E5225ADDFB">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>7426557D-B259-9BD3-BA49-9B1725C2D13D</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FFCE33F-97BC-01F1-C088-F57CF991605C" referredColumn="7ACA8DFB-ADFE-B9BF-E554-B4343943AE4B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="019874DC-4BD5-AC3A-A14C-D114F637E313" name="Vehicle_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>5199C45F-E7E1-B8B1-E427-0602417F0CCC</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="967E3DB6-A93A-6CB9-E5C0-5EDB64FB8A42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CD5D9A8-B20F-D488-DB60-2B17DA638DAE" name="Vehicle_coverageGroup_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>6C37380D-5B9B-22AA-17EC-879E2BBEE0FF</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5972E069-0ABD-21B3-3AF2-B7E5225ADDFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1A3DE1B-F36A-3824-C38C-F5F87C0FDFA8" name="Vehicle_insuredItem_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:51 UTC</createdTime>
+<generatorID>538B9A30-2762-1EA8-84AB-7EFA350EDD88</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="967E3DB6-A93A-6CB9-E5C0-5EDB64FB8A42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
