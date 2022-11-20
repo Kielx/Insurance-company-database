@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B8F6EE7-F9EA-2669-7545-234A4321D928" name="client">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:10 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E657ED8-AB5F-FC75-E383-2D2C08C79BDE" name="branch">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:40:24 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="client_id" id="E63A7F8C-0955-41DA-2701-38A17326D291">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:34 UTC</createdTime>
+<Attribute name="branch_id" id="0770E73E-DCBC-F6AE-09E1-5480C2E6EC84">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:40:31 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -27,46 +27,22 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="first_name" id="2E71B527-F235-2593-2D87-3D64BD4339DE">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:47 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="last_name" id="39107D55-D036-62B5-26B6-CC505678F41E">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 08:50:28 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="date_of_birth" id="441C0D03-E37E-1E2F-8534-ED40BD755CD3">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-15 08:50:53 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="country_id" id="1BD87E0B-ED76-BC0D-31BA-61C131BAC342">
+<Attribute name="branch_name" id="D5D5DF2A-1E0B-A349-BE8E-9DBBF275246A">
 <createdBy>Kielx</createdBy>
-<createdTime>2022-11-19 22:18:09 UTC</createdTime>
-<generatorID>7C3BE9B1-BFAF-49FE-2A9A-5CE0C8570B14</generatorID>
+<createdTime>2022-11-20 21:40:37 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country_id" id="FA4533B4-B19B-DD6A-2A3D-574ED6AF4C7C">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:41:13 UTC</createdTime>
+<generatorID>AEB7F205-9F15-FEC1-8CB3-7B01965F789B</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -77,10 +53,10 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="region_id" id="81D84640-9A4C-AC60-F005-82A84E1715EB">
+<Attribute name="region_id" id="E3C792EE-AE4A-94DC-8A46-00D739EC2452">
 <createdBy>Kielx</createdBy>
-<createdTime>2022-11-19 22:18:53 UTC</createdTime>
-<generatorID>91A544B3-D05E-86BD-E839-7DB60400F444</generatorID>
+<createdTime>2022-11-20 21:41:20 UTC</createdTime>
+<generatorID>8D16D4E8-EB4E-0DF9-087E-364858C0F229</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -91,10 +67,10 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="city_id" id="5B3DFA6F-A02B-2802-47E0-4F152D08B5B8">
+<Attribute name="city_id" id="C9ADF021-2A51-3609-7439-BA307A2038F6">
 <createdBy>Kielx</createdBy>
-<createdTime>2022-11-19 22:19:02 UTC</createdTime>
-<generatorID>1D081B6B-57C5-AB22-CB35-43B1BFE9840F</generatorID>
+<createdTime>2022-11-20 21:41:24 UTC</createdTime>
+<generatorID>5F1CFE9F-FF18-F91A-0E32-34317EC2EFF1</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -105,10 +81,10 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="street_id" id="0D00905B-C1C6-8815-FFDA-CE11E7148247">
+<Attribute name="street_id" id="8FDB2D30-819A-F9E1-66D0-CF7F285F52E7">
 <createdBy>Kielx</createdBy>
-<createdTime>2022-11-19 22:19:08 UTC</createdTime>
-<generatorID>120B7C7F-8A90-D7D3-6FEE-4EF31C303170</generatorID>
+<createdTime>2022-11-20 21:41:30 UTC</createdTime>
+<generatorID>5673C1B5-8172-F7DE-681A-3F11DB5F2BC3</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -119,10 +95,10 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="houseNr_id" id="2BCD3717-79FF-265A-69E1-63EEE3DA5EC4">
+<Attribute name="houseNr_id" id="387AA980-55ED-51AD-9A6F-F51C475E41CB">
 <createdBy>Kielx</createdBy>
-<createdTime>2022-11-19 22:19:13 UTC</createdTime>
-<generatorID>5F1494E7-C377-E228-F099-89FB564E2562</generatorID>
+<createdTime>2022-11-20 21:41:34 UTC</createdTime>
+<generatorID>D515A2C7-628A-87CA-FE08-DC68F244D513</generatorID>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
@@ -133,33 +109,18 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="clientType_id" id="9152AEF3-22EA-997E-2BD6-699C98F3B5D8">
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E4BCBCE-BC2E-4A99-EB65-CBCCFE13E27C" name="branch PK">
 <createdBy>Kielx</createdBy>
-<createdTime>2022-11-20 21:55:27 UTC</createdTime>
-<generatorID>7DA02072-4E77-F3E1-4E29-62A53CD8F9EC</generatorID>
+<createdTime>2022-11-20 21:40:36 UTC</createdTime>
 <ownerDesignName>db2_model</ownerDesignName>
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
 </engineerTo>
-<referedAttribute>48D8116C-18F7-330D-3989-BADFC20B47FF</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="FE20D1AB-2DB1-B3A5-CA88-D0ED54741F9F" name="user PK">
-<createdBy>745554</createdBy>
-<createdTime>2022-11-14 13:57:43 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E63A7F8C-0955-41DA-2701-38A17326D291</attributeRef>
+<attributeRef>0770E73E-DCBC-F6AE-09E1-5480C2E6EC84</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -87,6 +87,20 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="branch_id" id="7F053FAB-8EC1-384B-9385-1D75830B02A6">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:42:14 UTC</createdTime>
+<generatorID>B2FCF90B-F98F-CDD3-8CBF-5D6EF0E5C585</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>0770E73E-DCBC-F6AE-09E1-5480C2E6EC84</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="58E6050A-50B0-4F35-130C-BA480F6B001E" name="customer_phone_number PK">

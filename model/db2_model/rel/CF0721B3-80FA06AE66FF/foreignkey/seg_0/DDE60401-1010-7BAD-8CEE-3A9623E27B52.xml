@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DDE60401-1010-7BAD-8CEE-3A9623E27B52" containerWithKeyObject="64521807-468C-D8A6-9F56-34842D8063C6" localFKIndex="5CEDB51D-8E6B-00AB-D5E4-12F50B1C17C1" name="client_city_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:35:29 UTC</createdTime>
+<generatorID>1D081B6B-57C5-AB22-CB35-43B1BFE9840F</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<referredTableLongName>city</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>039919B0-58CF-A52E-F5FF-E6A3F95005B0</referredTableID>
+<keyObject>499BD11C-08CB-8105-8CD4-2A31548164EF</keyObject>
+<referredKeyID>499BD11C-08CB-8105-8CD4-2A31548164EF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>city_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
