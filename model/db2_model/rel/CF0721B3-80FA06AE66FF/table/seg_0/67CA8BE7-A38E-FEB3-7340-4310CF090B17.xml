@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67CA8BE7-A38E-FEB3-7340-4310CF090B17" name="street">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:48:57 UTC</createdTime>
+<generatorID>FFC970EF-A4F6-770C-5E4B-422F1BE4493F</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="street_id" id="98FD9635-C7E5-701F-3B77-DD1DF80A1E79">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:48:57 UTC</createdTime>
+<generatorID>ED4783CA-4105-B25D-9DD0-EC5E7D18FFA5</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_name" id="0019CC85-871E-38AD-821C-0F7469FEB776">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:48:57 UTC</createdTime>
+<generatorID>CAAEBBB6-53C1-D83D-16D9-9D2FD3165C97</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C928E608-3BE7-360D-AC5A-8370FFDE73A8" name="street_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:48:57 UTC</createdTime>
+<generatorID>90735CF9-DDC3-9FE0-9EDD-27F1CC86628E</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98FD9635-C7E5-701F-3B77-DD1DF80A1E79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

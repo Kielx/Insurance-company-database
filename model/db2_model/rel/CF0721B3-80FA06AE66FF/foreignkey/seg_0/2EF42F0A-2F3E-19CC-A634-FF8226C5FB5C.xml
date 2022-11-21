@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2EF42F0A-2F3E-19CC-A634-FF8226C5FB5C" containerWithKeyObject="1F66004B-AA51-16D7-AB1D-D30E48825035" localFKIndex="B51A04D3-CAA1-2C90-A928-AB0F68BB28A8" name="claim_insurance_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:48:57 UTC</createdTime>
+<generatorID>525C4E56-4107-408B-A4E4-EB4CD0F78110</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<referredTableLongName>insurance</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>05825980-2C4F-2C8F-D88D-7145C129F1F5</referredTableID>
+<keyObject>E98ADFBD-78D3-CBDF-391E-0FF3F19E50B4</keyObject>
+<referredKeyID>E98ADFBD-78D3-CBDF-391E-0FF3F19E50B4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>insurance_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
