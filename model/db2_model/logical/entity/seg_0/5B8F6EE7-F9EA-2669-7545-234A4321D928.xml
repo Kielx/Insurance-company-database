@@ -63,20 +63,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="country_id" id="1BD87E0B-ED76-BC0D-31BA-61C131BAC342">
-<createdBy>Kielx</createdBy>
-<createdTime>2022-11-19 22:18:09 UTC</createdTime>
-<generatorID>7C3BE9B1-BFAF-49FE-2A9A-5CE0C8570B14</generatorID>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<referedAttribute>A3B6EE85-A103-C8C1-FEBE-474110356A8A</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="region_id" id="81D84640-9A4C-AC60-F005-82A84E1715EB">
 <createdBy>Kielx</createdBy>
 <createdTime>2022-11-19 22:18:53 UTC</createdTime>

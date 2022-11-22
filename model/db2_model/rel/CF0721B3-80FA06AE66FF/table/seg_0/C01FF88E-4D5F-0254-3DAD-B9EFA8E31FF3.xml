@@ -63,9 +63,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="AEFF82BF-F8E5-E51E-7809-1E34FA09D0D1" referredColumn="A4F566D3-86CF-4925-65A7-241D59E200D2"/>
-</associations>
 </Column>
 <Column name="region_id" id="B8A6B1C3-6CA9-C32A-834A-43A4F58F37AD">
 <createdBy>Kielx</createdBy>
@@ -166,17 +163,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CF64400F-78DD-7E73-6640-DD0D6EC3F8CF"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="23895A67-C61B-1E08-4C65-3B3510B01434" name="client_country_FK">
-<createdBy>Kielx</createdBy>
-<createdTime>2022-11-22 20:06:15 UTC</createdTime>
-<generatorID>7C3BE9B1-BFAF-49FE-2A9A-5CE0C8570B14</generatorID>
-<ownerDesignName>db2_model</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="2FCEA68E-607E-BDB4-3970-20C52F39C326"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="5D037FEB-D3E1-D869-C5B9-99CF653CFB2A" name="client_region_FK">
