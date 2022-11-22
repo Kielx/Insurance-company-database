@@ -133,6 +133,32 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="date_of_employment" id="A04EA224-F8F4-2F1B-4B51-D68E6158DDA2">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:00:09 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary" id="5A2FFE21-F92F-C563-79D3-3CD9C0013A8F">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:00:19 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C8BFD332-1953-0555-4718-D8E0A0A2D19D" name="agent PK">

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB1601BE-AF23-8B2C-6BA3-F14A0AD3732D" name="payment">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:06:15 UTC</createdTime>
+<generatorID>4EAEBC00-A4EA-079F-0051-2B7774B519D8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="payment_id" id="6AAF9B16-6010-71AE-7A61-316FF9802413">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:06:15 UTC</createdTime>
+<generatorID>5AA19EE9-5A22-89A1-97A0-310C26FAF95D</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_type" id="91619D18-9511-DF8C-58B1-31C94CB27487">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:06:15 UTC</createdTime>
+<generatorID>E02304FC-2604-DF25-827C-7A7EB1A0E7A8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_amount" id="6136A542-08BC-6B37-38C0-0B3D6A043891">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:06:15 UTC</createdTime>
+<generatorID>0D414AD8-BA7A-8601-BE59-BF7C9AA8B09D</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_date" id="300A6120-0879-E6C7-405F-E74FD5CDCADA">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:06:15 UTC</createdTime>
+<generatorID>B93880A1-2CB2-09DC-2579-62D4C4159C75</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_due" id="B05B9EE9-7658-B895-4FFC-12B953A84E4C">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:06:15 UTC</createdTime>
+<generatorID>8F4C8148-898E-4326-7F08-3CACA2C50812</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C9D8339-6C64-885A-DF33-C5E91F9BFB70" name="payment_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:06:15 UTC</createdTime>
+<generatorID>DF216E7A-8F19-D928-0353-4D4D6C786418</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AAF9B16-6010-71AE-7A61-316FF9802413"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

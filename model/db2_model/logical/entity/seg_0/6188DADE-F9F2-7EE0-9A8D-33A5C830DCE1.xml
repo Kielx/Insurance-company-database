@@ -135,6 +135,19 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="price" id="768FB47F-2F7D-A90D-793B-208313411FB4">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 20:02:40 UTC</createdTime>
+<ownerDesignName>db2_model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="07517CCC-DB3F-25CE-DAD1-155F9EC0C5A5" name="policy PK">
