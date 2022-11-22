@@ -75,19 +75,20 @@ def generate_streets(records):
             })
     print(f'Successfully generated {records} streets')
 
-def generate_numbers(records):
-    headers = ["street_id", "street_name"]
-    with open("./generatedData/streets.csv", 'wt', newline='') as csvFile:
+def generate_house_numbers(records):
+    headers = ["houseNr_id", "houseNr_nr"]
+    with open("./generatedData/houseNr.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
             writer.writerow({
                 headers[0]: i,
-                headers[1]: faker.street_name()
+                headers[1]: faker.building_number()
             })
-    print(f'Successfully generated {records} streets')
+    print(f'Successfully generated {records} house numbers')
 
 if __name__ == '__main__':
     generate_regions(regionsList)
     generate_cities(citiesList)
     generate_streets(100)
+    generate_house_numbers(100)
