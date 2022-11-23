@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C8C3BD4-2152-792A-6270-C3551E0E6315" name="phone">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>F90E9B08-3444-864F-F7B2-8ADE8D18D6B8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="phone_id" id="C57CB22D-C71C-E6F9-7CE7-8A1E2A5CC100">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>8D7614BB-9F0D-1DCC-F956-3AABDDBC4A06</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="30EBC5FC-92E3-C712-3893-71D53165C1F3">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>DF516798-3846-1775-F3A3-D571B30AA0F7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_id" id="25C5757D-F5AA-211E-3E4A-5391755A38BE">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>8BA5B21F-F29B-7B98-62B3-2680F98E7086</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61CB6431-A0CF-3976-4B6D-321D8D1FBABF" referredColumn="13D8798D-7B49-4BB8-7C6A-94FCD3C4638D"/>
+</associations>
+</Column>
+<Column name="phoneType_id" id="94EB0AF5-FB92-D58F-E6BA-0BBAD48F92D0">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>21645232-966C-26F5-C2FC-EC16F3431988</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="371E4A88-3337-DA08-D802-649FBA50AB3A" referredColumn="EA41C28A-25E6-4896-1BF3-A57AC731C67C"/>
+</associations>
+</Column>
+<Column name="employee_id" id="B3C953BF-D882-55D3-D7D6-665CE6E217CD">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>CC3BBFFB-5B8D-D07F-F0F5-A477D035955C</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E680D87A-79F4-2DC6-9D3C-A90A0B23A80F" referredColumn="EC223F11-8DD9-95F9-320C-7FB4E1C1CA0A"/>
+</associations>
+</Column>
+<Column name="branch_id" id="3CF0A74D-9962-EFD2-E0EC-8D88F0D928D3">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>7F053FAB-8EC1-384B-9385-1D75830B02A6</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE9C7C77-171D-B86D-A6E4-0CFDB1590758" referredColumn="B9A2CFB9-4A14-7DA7-3541-6CF02B3DF744"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FBA131D9-4D49-66AF-8899-BE392213BC79" name="phone_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>58E6050A-50B0-4F35-130C-BA480F6B001E</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C57CB22D-C71C-E6F9-7CE7-8A1E2A5CC100"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4A4EF8E-78CD-D160-110E-7221187525EF" name="phone_employee_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>89A20FCA-67D2-3A32-952D-7A025EE20622</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3C953BF-D882-55D3-D7D6-665CE6E217CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCC69983-FBCD-E8D7-F0AD-9AE582EC544B" name="phone_client_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>0719981F-306B-55BB-B2BB-90E425BB9F86</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25C5757D-F5AA-211E-3E4A-5391755A38BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8C4E320-F2EF-8B4D-AF27-36E7B4D111C7" name="phone_branch_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:10 UTC</createdTime>
+<generatorID>B2FCF90B-F98F-CDD3-8CBF-5D6EF0E5C585</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CF0A74D-9962-EFD2-E0EC-8D88F0D928D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2FC4F58-5A47-EAFA-A465-16C074E5F572" name="phone_phoneType_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:10 UTC</createdTime>
+<generatorID>92CDA3A9-6512-E3A3-29B3-283D47871A44</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94EB0AF5-FB92-D58F-E6BA-0BBAD48F92D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

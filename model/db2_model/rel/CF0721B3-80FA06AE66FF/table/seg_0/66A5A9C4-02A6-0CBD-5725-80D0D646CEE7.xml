@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66A5A9C4-02A6-0CBD-5725-80D0D646CEE7" name="clientType">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>1F2028DB-86A0-E323-A61F-FFCC534E50F7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="clientType_id" id="BCB6CEC4-9530-509B-8E60-685E24064463">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>48D8116C-18F7-330D-3989-BADFC20B47FF</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clientType_name" id="AB87A06B-B637-FC8B-7AB1-7F9004306FD0">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>EBE8F1E0-F344-DA6E-F7DF-631275D239D8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C171FEE4-DA02-B05F-8C32-3691C1A45DB9" name="clientType_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>F932E9E2-125E-F0E6-C1F6-1E7DE26EDDF9</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCB6CEC4-9530-509B-8E60-685E24064463"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

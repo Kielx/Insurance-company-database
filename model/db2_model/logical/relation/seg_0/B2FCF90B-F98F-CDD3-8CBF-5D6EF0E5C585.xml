@@ -9,7 +9,7 @@
 <sourcePk>0E4BCBCE-BC2E-4A99-EB65-CBCCFE13E27C</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>false</optionalTarget>
+<optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>9E657ED8-AB5F-FC75-E383-2D2C08C79BDE</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>

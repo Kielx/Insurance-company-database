@@ -95,6 +95,7 @@
 <engineerTo>
 <item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>0770E73E-DCBC-F6AE-09E1-5480C2E6EC84</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2BF25B8-2A1C-DF80-26BA-BC00542EB977" name="houseNr">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>4F7EF983-2E3C-BC83-BB2B-249495B7F7BC</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="houseNr_id" id="A0819A17-E13F-B506-A587-79802716CC28">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>042DAC92-29F7-D957-DC1C-AEAB299759A5</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="houseNr_nr" id="1C5C360B-7130-6C8B-3B0B-6D44A927D11C">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>9D669567-1C1A-9B27-16D6-B5623253A8D8</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA532A8A-13AD-F7DB-2F87-C4110540F791" name="houseNr_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-23 21:44:09 UTC</createdTime>
+<generatorID>DE7BCCE5-5223-8EA0-FF62-E8DBD038DC42</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0819A17-E13F-B506-A587-79802716CC28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
