@@ -1,5 +1,5 @@
 import csv
-import random
+from random import randrange
 
 from faker import Faker
 
@@ -101,26 +101,58 @@ def generate_phoneType(records):
                 headers[0]: i,
                 headers[1]: phoneTypes[0]
             })
-    print(f'Successfully generated {records} phone types')
+    print(f'Successfully generated {records} client phone types')
 
 
-def generate_phones(records):
-    headers = ["phone_id", "phone_number"]
-    with open("./generatedData/phone.csv", 'wt', newline='') as csvFile:
+def generate_phones(records, id_start_value, client_or_employee_id_string, filename):
+    headers = ["phone_id", "phone_number", client_or_employee_id_string, "phoneType_id"]
+    with open(f"./generatedData/{filename}.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
             writer.writerow({
-                headers[0]: i,
-                headers[1]: faker.phone_number()
+                headers[0]: id_start_value + i,
+                headers[1]: faker.phone_number(),
+                headers[2]: i,
+                headers[3]: 1,
             })
-    print(f'Successfully generated {records} phone numbers')
+    print(f'Successfully generated {records} employee phone numbers')
+
+
+def generate_clients(records):
+    headers = ["client_id", "first_name", "last_name", "date_of_birth", "region_id", "city_id", "street_id",
+               "houseNr_id", "clientType_id", "discount"]
+
+    with open(f"./generatedData/clients.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            full_name = faker.name()
+            flname = full_name.split(" ")
+            firstname = flname[0]
+            lastname = flname[1]
+
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: firstname,
+                headers[2]: lastname,
+                headers[3]: faker.date_of_birth(None, 18, 65),
+                headers[4]: i % 16,
+                headers[5]: i % 16,
+                headers[6]: i,
+                headers[7]: i,
+                headers[8]: 1,
+                headers[9]: randrange(0, 50, 5)
+            })
+    print(f'Successfully generated {records} clients')
 
 
 if __name__ == '__main__':
     generate_regions(regionsList)
     generate_cities(citiesList)
-    generate_streets(100)
-    generate_house_numbers(100)
+    generate_streets(10000)
+    generate_house_numbers(10000)
     generate_phoneType(1)
-    generate_phones(10000)
+    generate_phones(10000, 0, "client_id", "clientPhones")
+    generate_phones(10000, 10000, "employee_id", "employeePhones")
+    generate_clients(10000)
