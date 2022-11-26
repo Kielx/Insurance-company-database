@@ -1,6 +1,6 @@
 import csv
 from random import randrange
-
+from datetime import date
 from faker import Faker
 
 faker = Faker('pl_PL')
@@ -146,6 +146,46 @@ def generate_clients(records):
             })
     print(f'Successfully generated {records} clients')
 
+def generate_clientType(records):
+    headers = ["clientType_id", "clientType_name"]
+    clientTypes = ["retail"]
+
+    with open(f"./generatedData/clientType.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: clientTypes[0]
+            })
+    print(f'Successfully generated {records} client types')
+
+def generate_employees(records):
+    headers = ["employee_id", "first_name", "last_name", "date_of_birth", "region_id", "city_id", "street_id",
+               "houseNr_id", "date_of_employment", "salary"]
+
+    with open(f"./generatedData/employees.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            full_name = faker.name()
+            flname = full_name.split(" ")
+            firstname = flname[0]
+            lastname = flname[1]
+
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: firstname,
+                headers[2]: lastname,
+                headers[3]: faker.date_of_birth(None, 18, 65),
+                headers[4]: i % 16,
+                headers[5]: i % 16,
+                headers[6]: i,
+                headers[7]: i,
+                headers[8]: faker.date_between_dates(date(2010, 1, 1), date(2020,1,1)),
+                headers[9]: randrange(2000, 4500, 100)
+            })
+    print(f'Successfully generated {records} employees')
 
 if __name__ == '__main__':
     generate_regions(regionsList)
@@ -156,3 +196,5 @@ if __name__ == '__main__':
     generate_phones(10000, 0, "client_id", "clientPhones")
     generate_phones(10000, 10000, "employee_id", "employeePhones")
     generate_clients(10000)
+    generate_clientType(1);
+    generate_employees(10000)
