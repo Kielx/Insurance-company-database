@@ -146,6 +146,7 @@ def generate_clients(records):
             })
     print(f'Successfully generated {records} clients')
 
+
 def generate_clientType(records):
     headers = ["clientType_id", "clientType_name"]
     clientTypes = ["retail"]
@@ -159,6 +160,7 @@ def generate_clientType(records):
                 headers[1]: clientTypes[0]
             })
     print(f'Successfully generated {records} client types')
+
 
 def generate_employees(records):
     headers = ["employee_id", "first_name", "last_name", "date_of_birth", "region_id", "city_id", "street_id",
@@ -182,10 +184,29 @@ def generate_employees(records):
                 headers[5]: i % 16,
                 headers[6]: i,
                 headers[7]: i,
-                headers[8]: faker.date_between_dates(date(2010, 1, 1), date(2020,1,1)),
+                headers[8]: faker.date_between_dates(date(2010, 1, 1), date(2020, 1, 1)),
                 headers[9]: randrange(2000, 4500, 100)
             })
     print(f'Successfully generated {records} employees')
+
+
+def generate_branches(records):
+    headers = ["branch_id", "branch_name", "region_id", "city_id", "street_id", "houseNr_id"]
+
+    with open(f"./generatedData/branches.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: faker.company(),
+                headers[2]: i % 16,
+                headers[3]: i % 16,
+                headers[4]: i % 16,
+                headers[5]: i,
+            })
+    print(f'Successfully generated {records} branches')
+
 
 if __name__ == '__main__':
     generate_regions(regionsList)
@@ -196,5 +217,6 @@ if __name__ == '__main__':
     generate_phones(10000, 0, "client_id", "clientPhones")
     generate_phones(10000, 10000, "employee_id", "employeePhones")
     generate_clients(10000)
-    generate_clientType(1);
+    generate_clientType(1)
     generate_employees(10000)
+    generate_branches(16)
