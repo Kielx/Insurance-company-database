@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E14AFC13-7CBB-358C-6F11-D1A6CD53CC04" name="branch">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>9E657ED8-AB5F-FC75-E383-2D2C08C79BDE</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="branch_id" id="C2FA0918-B42C-B42B-A774-413DD8D537AB">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>0770E73E-DCBC-F6AE-09E1-5480C2E6EC84</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_name" id="BC445C70-E63C-E5D0-0A0C-B60200F449F0">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>D5D5DF2A-1E0B-A349-BE8E-9DBBF275246A</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region_id" id="3BC9DB02-D85A-27E1-2F21-C21F9E06AFCF">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>E3C792EE-AE4A-94DC-8A46-00D739EC2452</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C12C46FD-A23E-4B50-2F88-20EF81D706BC" referredColumn="A971C39E-4A45-575F-6B27-B864546892C0"/>
+</associations>
+</Column>
+<Column name="city_id" id="9251BF86-239F-7DC8-241F-36217F3C8377">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>C9ADF021-2A51-3609-7439-BA307A2038F6</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42EF06C2-C612-3C04-B745-19636C5D351A" referredColumn="FF115A28-6A91-843C-FD99-944848507353"/>
+</associations>
+</Column>
+<Column name="street_id" id="3F68320E-5007-F1AC-5700-4A080E96DC33">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>8FDB2D30-819A-F9E1-66D0-CF7F285F52E7</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="317DA1D3-A0C9-F3FE-DC89-B39E65C9BDD0" referredColumn="890843D8-40A4-172A-848B-4233C3897D0E"/>
+</associations>
+</Column>
+<Column name="houseNr_id" id="15C3B8E0-2954-F85E-220F-E1D1ACFB762B">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>387AA980-55ED-51AD-9A6F-F51C475E41CB</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="006907A9-79E7-68F6-6AC5-9C81AB0AA397" referredColumn="8089C433-A4FE-309C-B622-F8A2791CA059"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="841AAA6C-76F7-84AD-9883-1EABB513B763" name="branch_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>0E4BCBCE-BC2E-4A99-EB65-CBCCFE13E27C</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2FA0918-B42C-B42B-A774-413DD8D537AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="074CB63D-2AFC-AC30-00B3-049F3081E1D1" name="branch_region_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>8D16D4E8-EB4E-0DF9-087E-364858C0F229</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BC9DB02-D85A-27E1-2F21-C21F9E06AFCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C753DA2-9BC3-9D13-6F63-D95B3BFFC20E" name="branch_city_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>5F1CFE9F-FF18-F91A-0E32-34317EC2EFF1</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9251BF86-239F-7DC8-241F-36217F3C8377"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D3F34F2-A914-7B02-2E40-7EDFE15EFA83" name="branch_street_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>5673C1B5-8172-F7DE-681A-3F11DB5F2BC3</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F68320E-5007-F1AC-5700-4A080E96DC33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AFAF0EC-9F89-2A1E-1199-B55138C23E64" name="branch_houseNr_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 19:36:15 UTC</createdTime>
+<generatorID>D515A2C7-628A-87CA-FE08-DC68F244D513</generatorID>
+<ownerDesignName>db2_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15C3B8E0-2954-F85E-220F-E1D1ACFB762B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

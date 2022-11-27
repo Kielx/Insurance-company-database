@@ -53,20 +53,6 @@
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="claim_approved" id="41F986A0-58D3-57F7-524F-8D16CB447B7F">
-<createdBy>Kielx</createdBy>
-<createdTime>2022-11-21 21:43:51 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="claim_amount" id="D1744515-7809-F03C-CC13-09C5FE2D76D6">
 <createdBy>Kielx</createdBy>
 <createdTime>2022-11-21 21:46:43 UTC</createdTime>
@@ -92,20 +78,6 @@
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="cs_status" id="466AE48F-0741-FBFC-3155-F15DD2F04674">
-<createdBy>Kielx</createdBy>
-<createdTime>2022-11-21 21:48:47 UTC</createdTime>
-<generatorID>718318EF-8D36-CE27-B766-57EA38637A28</generatorID>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<referedAttribute>17D955AC-4099-8672-677F-3DF60F59F6AA</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
