@@ -2,6 +2,9 @@ import csv
 from random import randrange
 from datetime import date, timedelta
 from faker import Faker
+import os
+import re
+
 
 faker = Faker('pl_PL')
 regionsList = ['Greater Poland (Wielkopolskie)', 'Kuyavian-Pomeranian (Kujawsko-pomorskie)',
@@ -25,6 +28,35 @@ citiesList = ['Poznań', 'Bydgoszcz', 'Kraków', 'Łódź', 'Wrocław', 'Lublin'
 
 insurance_begin_dates = []
 employee_employment_dates = []
+os.remove("../sqlldr/load_files.bat")
+
+
+def create_ctl_file(filename, headers):
+    file = open(f'../sqlldr/{filename}.ctl', "w+")
+    file.write("LOAD DATA\n")
+    file.write(f"INFILE '../dataGenerator/generatedData/{filename}.csv'\n")
+    file.write("REPLACE\n")
+    file.write(f"INTO TABLE {filename}\n")
+    file.write("FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '\"'\n")
+    file.write("TRAILING NULLCOLS\n")
+    file.write("(\n")
+    for i in range(len(headers)):
+        if re.search(r'date', headers[i], re.IGNORECASE):
+            file.write(f'{headers[i]} DATE "yyyy-mm-dd"')
+        else:
+            file.write(headers[i])
+        if i != (len(headers) - 1):
+            file.write(",")
+    file.write("\n)")
+    file.close()
+    print(f"Successfully generated {filename}.ctl file")
+    bat_file = open('../sqlldr/load_files.bat', "a+")
+    bat_file.write(f'\nsqlldr %1/%2@//localhost:1521/XEPDB1 control={filename}.ctl log={filename}.log')
+    bat_file.close()
+    print(f"Successfully appended {filename} data to load_files.bat")
+
+
+
 """
 def generate_countries(countries):
     headers = ["country_id", "country_name"]
@@ -51,11 +83,12 @@ def generate_regions(regions):
                 headers[1]: regions[i],
             })
     print(f'Successfully generated {len(regions)} regions')
+    create_ctl_file("region", headers)
 
 
 def generate_cities(cities):
     headers = ["city_id", "city_name"]
-    with open("./generatedData/cities.csv", 'wt', newline='') as csvFile:
+    with open("./generatedData/city.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(len(cities)):
@@ -64,11 +97,12 @@ def generate_cities(cities):
                 headers[1]: cities[i],
             })
     print(f'Successfully generated {len(cities)} cities')
+    create_ctl_file("city", headers)
 
 
 def generate_streets(records):
     headers = ["street_id", "street_name"]
-    with open("./generatedData/streets.csv", 'wt', newline='') as csvFile:
+    with open("./generatedData/street.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -77,6 +111,7 @@ def generate_streets(records):
                 headers[1]: faker.street_name()
             })
     print(f'Successfully generated {records} streets')
+    create_ctl_file("street", headers)
 
 
 def generate_house_numbers(records):
@@ -90,6 +125,7 @@ def generate_house_numbers(records):
                 headers[1]: faker.building_number()
             })
     print(f'Successfully generated {records} house numbers')
+    create_ctl_file("houseNr", headers)
 
 
 def generate_phoneType(records):
@@ -104,28 +140,32 @@ def generate_phoneType(records):
                 headers[1]: phoneTypes[0]
             })
     print(f'Successfully generated {records} client phone types')
+    create_ctl_file("phoneType", headers)
 
 
-def generate_phones(records, id_start_value, client_or_employee_id_string, filename):
-    headers = ["phone_id", "phone_number", client_or_employee_id_string, "phoneType_id"]
-    with open(f"./generatedData/{filename}.csv", 'wt', newline='') as csvFile:
+def generate_phones(records):
+    headers = ["phone_id", "phone_number", "client_id", "employee_id", "branch_id", "phoneType_id"]
+    with open(f"./generatedData/phone.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
             writer.writerow({
-                headers[0]: id_start_value + i,
+                headers[0]: i,
                 headers[1]: faker.phone_number(),
-                headers[2]: i,
-                headers[3]: 1,
+                headers[2]: i if (i<10000) else None,
+                headers[3]: i if (i>= 10000) else None,
+                headers[4]: None,
+                headers[5]: 0
             })
-    print(f'Successfully generated {records} {client_or_employee_id_string} phone numbers')
+    print(f'Successfully generated {records} phone numbers')
+    create_ctl_file("phone", headers)
 
 
 def generate_clients(records):
     headers = ["client_id", "first_name", "last_name", "date_of_birth", "region_id", "city_id", "street_id",
                "houseNr_id", "clientType_id", "discount"]
 
-    with open(f"./generatedData/clients.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/client.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -143,15 +183,16 @@ def generate_clients(records):
                 headers[5]: i % 16,
                 headers[6]: i,
                 headers[7]: i,
-                headers[8]: 1,
+                headers[8]: randrange(0, 2),
                 headers[9]: randrange(0, 50, 5)
             })
     print(f'Successfully generated {records} clients')
+    create_ctl_file("client", headers)
 
 
 def generate_clientType(records):
     headers = ["clientType_id", "clientType_name"]
-    clientTypes = ["retail"]
+    clientTypes = ["retail", "business"]
 
     with open(f"./generatedData/clientType.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
@@ -159,16 +200,17 @@ def generate_clientType(records):
         for i in range(records):
             writer.writerow({
                 headers[0]: i,
-                headers[1]: clientTypes[0]
+                headers[1]: clientTypes[i%2]
             })
     print(f'Successfully generated {records} client types')
+    create_ctl_file("clientType", headers)
 
 
 def generate_employees(records):
     headers = ["employee_id", "first_name", "last_name", "date_of_birth", "region_id", "city_id", "street_id",
                "houseNr_id", "date_of_employment", "salary"]
 
-    with open(f"./generatedData/employees.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/employee.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -191,12 +233,13 @@ def generate_employees(records):
                 headers[9]: randrange(2000, 4500, 100)
             })
     print(f'Successfully generated {records} employees')
+    create_ctl_file("employee", headers)
 
 
 def generate_branches(records):
     headers = ["branch_id", "branch_name", "region_id", "city_id", "street_id", "houseNr_id"]
 
-    with open(f"./generatedData/branches.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/branch.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -209,13 +252,14 @@ def generate_branches(records):
                 headers[5]: i,
             })
     print(f'Successfully generated {records} branches')
+    create_ctl_file("branch", headers)
 
 
 def generate_insurances(records):
     headers = ["insurance_id", "insurance_number", "client_id", "employee_id", "begin_date", "expiration_date",
                "insuranceType_id", "payment_id", "branch_id", "price"]
 
-    with open(f"./generatedData/insurances.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/insurance.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -229,20 +273,21 @@ def generate_insurances(records):
                 headers[3]: employee_id,
                 headers[4]: begin_date,
                 headers[5]: expiration_date,
-                headers[6]: faker.random_int(0, 4),
+                headers[6]: faker.random_int(0, 3),
                 headers[7]: i,
                 headers[8]: i % 16,
                 headers[9]: faker.random_int(300, 2500, 100)
             })
             insurance_begin_dates.append(begin_date)
     print(f'Successfully generated {records} insurances')
+    create_ctl_file("insurance", headers)
 
 
 def generate_insurance_types(records):
     headers = ["insuranceType_id", "insurance_type"]
     types = ["House", "Car", "Health", "Property"]
 
-    with open(f"./generatedData/insuranceTypes.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/insuranceType.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -251,12 +296,13 @@ def generate_insurance_types(records):
                 headers[1]: types[i]
             })
     print(f'Successfully generated {records} insurance Types')
+    create_ctl_file("insuranceType", headers)
 
 
 def generate_payments(records):
-    headers = ["payment_id", "payment_type", "payment_amount", "payment_date", "payment_due"]
+    headers = ["payment_id", "payment_type", "payment_amount", "payment_date"]
 
-    with open(f"./generatedData/payments.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/payment.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -265,15 +311,15 @@ def generate_payments(records):
                 headers[1]: "cash",
                 headers[2]: faker.random_int(300, 2500, 100),
                 headers[3]: insurance_begin_dates[i],
-                headers[4]: insurance_begin_dates[i] + timedelta(days=30)
             })
     print(f'Successfully generated {records} payments')
+    create_ctl_file("payment", headers)
 
 
 def generate_claims(records):
     headers = ["claim_id", "claim_name", "insurance_id", "claim_amount", "cs_id"]
 
-    with open(f"./generatedData/claims.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/claim.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -285,12 +331,14 @@ def generate_claims(records):
                 headers[4]: faker.random_int(0, 2),
             })
     print(f'Successfully generated {records} claims')
+    create_ctl_file("claim", headers)
+
 
 def generate_claim_statuses(records):
     headers = ["cs_id", "cs_status"]
     types = ["Approved", "Pending", "Rejected"]
 
-    with open(f"./generatedData/claimStatuses.csv", 'wt', newline='') as csvFile:
+    with open(f"./generatedData/claimStatus.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
@@ -299,22 +347,25 @@ def generate_claim_statuses(records):
                 headers[1]: types[i]
             })
     print(f'Successfully generated {records} claim statuses')
+    create_ctl_file("claimStatus", headers)
+
 
 if __name__ == '__main__':
     generate_regions(regionsList)
     generate_cities(citiesList)
     generate_streets(10000)
     generate_house_numbers(10000)
-    generate_phoneType(1)
-    generate_phones(10000, 0, "client_id", "clientPhones")
-    generate_phones(1000, 10000, "employee_id", "employeePhones")
+    generate_clientType(2)
     generate_clients(10000)
-    generate_clientType(1)
     generate_employees(1000)
     generate_branches(16)
-    generate_insurances(10000)
+    generate_phoneType(1)
+    generate_phones(11000)
     generate_insurance_types(4)
+    generate_insurances(10000)
     generate_payments(10000)
-    generate_claims(1000)
     generate_claim_statuses(3)
+    generate_claims(1000)
+
+
 
