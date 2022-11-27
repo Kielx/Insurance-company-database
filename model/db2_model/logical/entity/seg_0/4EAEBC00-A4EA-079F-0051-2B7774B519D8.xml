@@ -65,19 +65,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="payment_due" id="8F4C8148-898E-4326-7F08-3CACA2C50812">
-<createdBy>Kielx</createdBy>
-<createdTime>2022-11-21 21:42:52 UTC</createdTime>
-<ownerDesignName>db2_model</ownerDesignName>
-<engineerTo>
-<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="DF216E7A-8F19-D928-0353-4D4D6C786418" name="payment PK">
