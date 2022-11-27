@@ -1,6 +1,6 @@
 import csv
 from random import randrange
-from datetime import date
+from datetime import date, timedelta
 from faker import Faker
 
 faker = Faker('pl_PL')
@@ -116,7 +116,7 @@ def generate_phones(records, id_start_value, client_or_employee_id_string, filen
                 headers[2]: i,
                 headers[3]: 1,
             })
-    print(f'Successfully generated {records} employee phone numbers')
+    print(f'Successfully generated {records} {client_or_employee_id_string} phone numbers')
 
 
 def generate_clients(records):
@@ -208,6 +208,32 @@ def generate_branches(records):
     print(f'Successfully generated {records} branches')
 
 
+def generate_insurances(records):
+    headers = ["insurance_id", "insurance_number", "client_id", "employee_id", "begin_date", "expiration_date",
+               "insuranceType_id", "payment_id", "branch_id", "price"]
+
+    with open(f"./generatedData/insurances.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            employee_id = faker.random_int(0, 1000)
+            begin_date = faker.date_between_dates(date(2010, 1, 1), date(2020, 1, 1))
+            expiration_date = begin_date + timedelta(days=365)
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: faker.bothify(text=f'Ube-B{i%16}/C-{i}/E-{employee_id}-####'),
+                headers[2]: i,
+                headers[3]: employee_id,
+                headers[4]: begin_date,
+                headers[5]: expiration_date,
+                headers[6]: i % 4,
+                headers[7]: i,
+                headers[8]: i % 16,
+                headers[9]: faker.random_int(300, 2500, 100)
+            })
+    print(f'Successfully generated {records} insurances')
+
+
 if __name__ == '__main__':
     generate_regions(regionsList)
     generate_cities(citiesList)
@@ -215,8 +241,9 @@ if __name__ == '__main__':
     generate_house_numbers(10000)
     generate_phoneType(1)
     generate_phones(10000, 0, "client_id", "clientPhones")
-    generate_phones(10000, 10000, "employee_id", "employeePhones")
+    generate_phones(1000, 10000, "employee_id", "employeePhones")
     generate_clients(10000)
     generate_clientType(1)
-    generate_employees(10000)
+    generate_employees(1000)
     generate_branches(16)
+    generate_insurances(10000)
