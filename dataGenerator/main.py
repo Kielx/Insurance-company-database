@@ -226,13 +226,26 @@ def generate_insurances(records):
                 headers[3]: employee_id,
                 headers[4]: begin_date,
                 headers[5]: expiration_date,
-                headers[6]: i % 4,
+                headers[6]: faker.random_int(0,4),
                 headers[7]: i,
                 headers[8]: i % 16,
                 headers[9]: faker.random_int(300, 2500, 100)
             })
     print(f'Successfully generated {records} insurances')
 
+def generate_insurance_types(records):
+    headers = ["insuranceType_id", "insurance_type"]
+    types = ["House", "Car", "Health", "Property"]
+
+    with open(f"./generatedData/insuranceTypes.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: types[i]
+            })
+    print(f'Successfully generated {records} insurance Types')
 
 if __name__ == '__main__':
     generate_regions(regionsList)
@@ -247,3 +260,4 @@ if __name__ == '__main__':
     generate_employees(1000)
     generate_branches(16)
     generate_insurances(10000)
+    generate_insurance_types(4)
