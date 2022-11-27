@@ -23,6 +23,8 @@ regionsList = ['Greater Poland (Wielkopolskie)', 'Kuyavian-Pomeranian (Kujawsko-
 citiesList = ['Poznań', 'Bydgoszcz', 'Kraków', 'Łódź', 'Wrocław', 'Lublin', 'Gorzów Wielkopolski', 'Warszawa', 'Opole',
               'Białystok', 'Gdańsk', 'Katowice', 'Rzeszów', 'Kielce', 'Olsztyn', 'Szczecin']
 
+insurance_begin_dates = []
+employee_employment_dates = []
 """
 def generate_countries(countries):
     headers = ["country_id", "country_name"]
@@ -174,7 +176,8 @@ def generate_employees(records):
             flname = full_name.split(" ")
             firstname = flname[0]
             lastname = flname[1]
-
+            employment_date = faker.date_between_dates(date(2010, 1, 1), date(2020, 1, 1))
+            employee_employment_dates.append(employment_date)
             writer.writerow({
                 headers[0]: i,
                 headers[1]: firstname,
@@ -184,7 +187,7 @@ def generate_employees(records):
                 headers[5]: i % 16,
                 headers[6]: i,
                 headers[7]: i,
-                headers[8]: faker.date_between_dates(date(2010, 1, 1), date(2020, 1, 1)),
+                headers[8]: employment_date,
                 headers[9]: randrange(2000, 4500, 100)
             })
     print(f'Successfully generated {records} employees')
@@ -216,22 +219,24 @@ def generate_insurances(records):
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         for i in range(records):
-            employee_id = faker.random_int(0, 1000)
-            begin_date = faker.date_between_dates(date(2010, 1, 1), date(2020, 1, 1))
+            employee_id = faker.random_int(0, 999)
+            begin_date = faker.date_between_dates(employee_employment_dates[employee_id], date(2020, 1, 1))
             expiration_date = begin_date + timedelta(days=365)
             writer.writerow({
                 headers[0]: i,
-                headers[1]: faker.bothify(text=f'Ube-B{i%16}/C-{i}/E-{employee_id}-####'),
+                headers[1]: faker.bothify(text=f'Ube-B{i % 16}/C-{i}/E-{employee_id}-####'),
                 headers[2]: i,
                 headers[3]: employee_id,
                 headers[4]: begin_date,
                 headers[5]: expiration_date,
-                headers[6]: faker.random_int(0,4),
+                headers[6]: faker.random_int(0, 4),
                 headers[7]: i,
                 headers[8]: i % 16,
                 headers[9]: faker.random_int(300, 2500, 100)
             })
+            insurance_begin_dates.append(begin_date)
     print(f'Successfully generated {records} insurances')
+
 
 def generate_insurance_types(records):
     headers = ["insuranceType_id", "insurance_type"]
@@ -247,6 +252,54 @@ def generate_insurance_types(records):
             })
     print(f'Successfully generated {records} insurance Types')
 
+
+def generate_payments(records):
+    headers = ["payment_id", "payment_type", "payment_amount", "payment_date", "payment_due"]
+
+    with open(f"./generatedData/payments.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: "cash",
+                headers[2]: faker.random_int(300, 2500, 100),
+                headers[3]: insurance_begin_dates[i],
+                headers[4]: insurance_begin_dates[i] + timedelta(days=30)
+            })
+    print(f'Successfully generated {records} payments')
+
+
+def generate_claims(records):
+    headers = ["claim_id", "claim_name", "insurance_id", "claim_amount", "cs_id"]
+
+    with open(f"./generatedData/claims.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: faker.bothify(text=f'{i}-????-####'),
+                headers[2]: faker.random_int(0, 9999),
+                headers[3]: faker.random_int(100, 25000, 100),
+                headers[4]: faker.random_int(0, 2),
+            })
+    print(f'Successfully generated {records} claims')
+
+def generate_claim_statuses(records):
+    headers = ["cs_id", "cs_status"]
+    types = ["Approved", "Pending", "Rejected"]
+
+    with open(f"./generatedData/claimStatuses.csv", 'wt', newline='') as csvFile:
+        writer = csv.DictWriter(csvFile, fieldnames=headers)
+        writer.writeheader()
+        for i in range(records):
+            writer.writerow({
+                headers[0]: i,
+                headers[1]: types[i]
+            })
+    print(f'Successfully generated {records} claim statuses')
+
 if __name__ == '__main__':
     generate_regions(regionsList)
     generate_cities(citiesList)
@@ -261,3 +314,7 @@ if __name__ == '__main__':
     generate_branches(16)
     generate_insurances(10000)
     generate_insurance_types(4)
+    generate_payments(10000)
+    generate_claims(1000)
+    generate_claim_statuses(3)
+
