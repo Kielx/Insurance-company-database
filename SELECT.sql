@@ -86,3 +86,24 @@ INNER JOIN insurance USING (employee_id)
 INNER JOIN branch USING (branch_id)
 ORDER BY branch_id, salary DESC
 ;
+
+
+-- 03 Partycje obliczeniowe - Baza danych
+-- Procentowe zestawienie udzia³u pracowników sprzeda¿y polis
+
+SELECT 
+  employee_id,
+  first_name AS "Imiê pracownika",
+  last_name AS "Nazwisko Pracownika",
+  branch_name AS "Oddzia³",
+  SUM(price) OVER (PARTITION BY employee_id) AS "Suma sprzeda¿y pracownika",
+  SUM(price) OVER (PARTITION BY branch_id) AS "Suma sprzeda¿y w oddziale",
+  ROUND(SUM(price) OVER (PARTITION BY employee_id) * 100.0 / sum(price) OVER (PARTITION BY branch_id), 2) AS "Procentowy stosunek sprzeda¿y do ca³kowitej sprzeda¿y wydzia³u",
+  ROUND(SUM(price) OVER (PARTITION BY employee_id) * 100.0 / sum(price) OVER (), 2) AS "Procentowy stosunek sprzeda¿y do sumy ogólnej" 
+FROM employee 
+INNER JOIN insurance USING (employee_id) 
+INNER JOIN branch USING (branch_id)
+ORDER BY branch_id, "Procentowy stosunek sprzeda¿y do ca³kowitej sprzeda¿y wydzia³u" DESC
+;
+
+
