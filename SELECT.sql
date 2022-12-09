@@ -92,7 +92,6 @@ ORDER BY branch_id, salary DESC
 -- Procentowe zestawienie udzia³u pracowników sprzeda¿y polis
 
 SELECT 
-  employee_id,
   first_name AS "Imiê pracownika",
   last_name AS "Nazwisko Pracownika",
   branch_name AS "Oddzia³",
@@ -104,6 +103,25 @@ FROM employee
 INNER JOIN insurance USING (employee_id) 
 INNER JOIN branch USING (branch_id)
 ORDER BY branch_id, "Procentowy stosunek sprzeda¿y do ca³kowitej sprzeda¿y wydzia³u" DESC
+;
+
+
+-- 03 Partycje obliczeniowe - Baza danych
+-- Procentowe zestawienie wyp³at z tytu³u odszkodowañ na przestrzeni dzia³ów i ich procentowy udzia³ w sumie wszystkich wyp³at
+
+SELECT 
+  claim_id "Identyfikator wyp³aty",
+  branch_name AS "Nazwa oddzia³u",
+  claim_amount AS "Wielko¶æ wyp³aty",
+  SUM(claim_amount) OVER (PARTITION BY branch_id) AS "Suma wyp³at oddzia³u",
+  SUM(claim_amount) OVER () AS "Suma wszystkich wyp³at",
+  ROUND(claim_amount * 100.0 / sum(claim_amount) OVER (PARTITION BY branch_id), 2) AS "Procentowy udzia³ wyp³aty w  sumie ca³kowitych wyp³at oddzia³u",
+  ROUND(SUM(claim_amount) OVER (PARTITION BY branch_id) * 100 / SUM(claim_amount) OVER (), 2) AS "Procentowy udzia³ oddzia³u w sumie wyp³at"
+FROM claim 
+INNER JOIN insurance USING (insurance_id) 
+INNER JOIN branch USING (branch_id)
+WHERE cs_id = 0
+ORDER BY branch_id, "Procentowy udzia³ oddzia³u w sumie wyp³at", "Procentowy udzia³ wyp³aty w  sumie ca³kowitych wyp³at oddzia³u"  DESC
 ;
 
 
