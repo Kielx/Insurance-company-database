@@ -124,4 +124,40 @@ WHERE cs_id = 0
 ORDER BY branch_id, "Procentowy udzia³ oddzia³u w sumie wyp³at", "Procentowy udzia³ wyp³aty w  sumie ca³kowitych wyp³at oddzia³u"  DESC
 ;
 
+-- 04 Okna czasowe - Baza danych
+-- Zestawienie sumy wyp³at w okresie ostatniego kwarta³u ka¿dego roku
 
+SELECT 
+  EXTRACT (YEAR FROM begin_date) AS rok,
+  EXTRACT (MONTH FROM begin_date) AS miesi±c, 
+  branch_name AS "Nazwa oddzia³u", 
+  insurance_number AS "Numer polisy",
+  claim_amount AS "Suma wyp³aty",
+  claim_name AS "Numer zg³oszenia",
+  COUNT(insurance_number) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Ilo¶c wyp³at w danym okresie w roku" ,
+  SUM(claim_amount) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Suma wyp³at w danym okresie w roku"
+FROM insurance
+INNER JOIN claim USING (insurance_id)
+INNER JOIN branch USING (branch_id)
+WHERE EXTRACT (MONTH FROM begin_date) BETWEEN 9 AND 12 AND claim.cs_id = 0
+ORDER BY  EXTRACT (YEAR FROM begin_date), EXTRACT (MONTH FROM begin_date) ASC
+;
+
+
+-- 04 Okna czasowe - Baza danych
+-- Zestawienie sumy przychodów oddzia³ów w okresie pierwszego pó³rocza ka¿dego roku
+
+SELECT 
+  EXTRACT (YEAR FROM begin_date) AS rok,
+  EXTRACT (MONTH FROM begin_date) AS miesi±c, 
+  branch_name AS "Nazwa oddzia³u", 
+  insurance_number AS "Numer polisy",
+  price AS "Cena polisy",
+  COUNT(insurance_number) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Ilo¶c zawartych polis w danym okresie w roku" ,
+  SUM(price) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Suma przychodów w danym okresie w roku"
+FROM insurance
+INNER JOIN claim USING (insurance_id)
+INNER JOIN branch USING (branch_id)
+WHERE EXTRACT (MONTH FROM begin_date) BETWEEN 1 AND 6
+ORDER BY  EXTRACT (YEAR FROM begin_date), EXTRACT (MONTH FROM begin_date) ASC
+;
