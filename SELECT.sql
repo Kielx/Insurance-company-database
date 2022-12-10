@@ -134,8 +134,8 @@ SELECT
   insurance_number AS "Numer polisy",
   claim_amount AS "Suma wyp³aty",
   claim_name AS "Numer zg³oszenia",
-  COUNT(insurance_number) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Ilo¶c wyp³at w danym okresie w roku" ,
-  SUM(claim_amount) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Suma wyp³at w danym okresie w roku"
+  COUNT(claim_id) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date) ORDER BY begin_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Numer wyp³aty w danym okresie roku",
+  SUM(claim_amount) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date) ORDER BY begin_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Suma dotychczasowych wyp³at w danym okresie w roku"
 FROM insurance
 INNER JOIN claim USING (insurance_id)
 INNER JOIN branch USING (branch_id)
@@ -146,18 +146,33 @@ ORDER BY  EXTRACT (YEAR FROM begin_date), EXTRACT (MONTH FROM begin_date) ASC
 
 -- 04 Okna czasowe - Baza danych
 -- Zestawienie sumy przychodów oddzia³ów w okresie pierwszego pó³rocza ka¿dego roku
-
 SELECT 
   EXTRACT (YEAR FROM begin_date) AS rok,
   EXTRACT (MONTH FROM begin_date) AS miesi±c, 
   branch_name AS "Nazwa oddzia³u", 
   insurance_number AS "Numer polisy",
   price AS "Cena polisy",
-  COUNT(insurance_number) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Ilo¶c zawartych polis w danym okresie w roku" ,
-  SUM(price) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date)) AS "Suma przychodów w danym okresie w roku"
+  COUNT(insurance_number) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date) ORDER BY begin_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Numer zawartej polisy w danym okresie roku",
+  SUM(price) OVER (PARTITION BY EXTRACT (YEAR FROM begin_date) ORDER BY begin_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Suma dotychczasowych wyp³at w danym okresie w roku"
 FROM insurance
 INNER JOIN claim USING (insurance_id)
 INNER JOIN branch USING (branch_id)
 WHERE EXTRACT (MONTH FROM begin_date) BETWEEN 1 AND 6
+ORDER BY  EXTRACT (YEAR FROM begin_date), EXTRACT (MONTH FROM begin_date), "Numer zawartej polisy w danym okresie roku" ASC
+;
+
+-- 04 Okna czasowe - Baza danych
+-- Zestawienie ilo¶ci zatrudnionych pracowników we wszystkich oddzia³ch na przestrzeni lat
+SELECT 
+  EXTRACT (YEAR FROM begin_date) AS rok,
+  EXTRACT (MONTH FROM begin_date) AS miesi±c, 
+  first_name AS "Imiê pracownika", 
+  last_name AS "Nazwisko pracownika",
+  branch_name AS "Oddzia³",
+  COUNT(employee_id) OVER (PARTITION BY branch_id ORDER BY begin_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilo¶æ pracowników zatrudnionych w oddziale",
+  COUNT(employee_id) OVER (ORDER BY begin_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilo¶æ pracowników zatrudnionych we wszystkich oddzia³ach"
+  FROM insurance
+INNER JOIN employee USING (employee_id)
+INNER JOIN branch USING (branch_id)
 ORDER BY  EXTRACT (YEAR FROM begin_date), EXTRACT (MONTH FROM begin_date) ASC
 ;
