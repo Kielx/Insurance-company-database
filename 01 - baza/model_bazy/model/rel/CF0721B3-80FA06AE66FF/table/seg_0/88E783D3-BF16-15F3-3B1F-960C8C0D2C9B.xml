@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88E783D3-BF16-15F3-3B1F-960C8C0D2C9B" name="claim">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>EDD9518D-D543-FBE9-A20F-8ED330F0F3DA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="claim_id" id="123BA2F8-AC0B-5B99-0CCD-232A08A19FD4">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>B9D27568-250B-BD05-B8EC-B75A1BFBFF90</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="claim_name" id="C6062DFB-D674-4B8F-490F-440928273353">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>C5729152-9C71-E518-2991-426723C0F808</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insurance_id" id="F5312A32-A755-8398-20B6-2A0A0C742F37">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>AF307BC2-68FF-BCDC-9A07-1DAAE58F1FAF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DE61342-118E-1D52-6DA0-5E595A603005" referredColumn="4D51459C-CCF7-CC3B-EAEB-407D331DBFD7"/>
+</associations>
+</Column>
+<Column name="claim_amount" id="BC8C0E8E-EAA6-DA04-C022-F629BB6455CE">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>D1744515-7809-F03C-CC13-09C5FE2D76D6</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cs_id" id="C2575457-1B8E-A815-621D-8D358AB0DABF">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>C171E288-C68C-DA23-A804-41C9858FCFFF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4004610-CF83-E544-531C-F7EA748404AB" referredColumn="F851853B-FDBD-5510-5E33-9AEE0BDD530A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4208F77-3B6E-5383-92C4-66BFF3714951" name="claim_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>1C92C2DD-838C-46D2-E219-A4E9A7AA5A01</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="123BA2F8-AC0B-5B99-0CCD-232A08A19FD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FB9E12D-59A5-D067-EDAA-4AF654E64E27" name="claim_insurance_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>525C4E56-4107-408B-A4E4-EB4CD0F78110</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5312A32-A755-8398-20B6-2A0A0C742F37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC8D1727-E9FD-BD9B-76A9-A564DC0C6905" name="claim_claimStatus_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>718318EF-8D36-CE27-B766-57EA38637A28</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2575457-1B8E-A815-621D-8D358AB0DABF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

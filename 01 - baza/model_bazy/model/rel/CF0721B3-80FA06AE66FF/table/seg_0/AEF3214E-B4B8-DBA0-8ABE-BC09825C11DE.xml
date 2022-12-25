@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AEF3214E-B4B8-DBA0-8ABE-BC09825C11DE" name="street">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>FFC970EF-A4F6-770C-5E4B-422F1BE4493F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="street_id" id="4B2CFB79-3640-86D2-E235-F768749053AE">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>ED4783CA-4105-B25D-9DD0-EC5E7D18FFA5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_name" id="2089A785-FF82-59CD-597D-7C716DA387B0">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>CAAEBBB6-53C1-D83D-16D9-9D2FD3165C97</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="171E0C8D-293B-402F-94AB-780A30AC3FDF" name="street_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>90735CF9-DDC3-9FE0-9EDD-27F1CC86628E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B2CFB79-3640-86D2-E235-F768749053AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

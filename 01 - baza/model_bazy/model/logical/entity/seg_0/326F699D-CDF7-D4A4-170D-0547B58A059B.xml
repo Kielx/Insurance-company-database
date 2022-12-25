@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="326F699D-CDF7-D4A4-170D-0547B58A059B" name="region">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:10:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="region_id" id="AB2FACCE-2006-4AC5-FDB1-94821A2DAE5E">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:10:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region_name" id="313B3DFB-39A4-CA15-0183-B1FA77EB521B">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:10:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D109A322-9BBE-E845-38B6-66893A94E762" name="region PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:10:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AB2FACCE-2006-4AC5-FDB1-94821A2DAE5E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

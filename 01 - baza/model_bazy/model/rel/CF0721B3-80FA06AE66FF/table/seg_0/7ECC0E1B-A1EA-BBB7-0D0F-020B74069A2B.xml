@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7ECC0E1B-A1EA-BBB7-0D0F-020B74069A2B" name="phoneType">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>F397AE5B-ED70-7178-92C0-3F120B47A052</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="phoneType_id" id="D15200DB-7858-26CE-2A27-4FCAB9415935">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>0893C035-A73B-39AC-0A20-019AAC8C8010</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type_name" id="32DEBA14-2F68-12B1-A7E8-C29907580645">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>4A2CEC85-2961-5610-E1F7-D565D57009B7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A0529EC-C672-3A47-6E69-B1041AE0B717" name="phoneType_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>C198173B-0A00-5168-45EE-71A424772D98</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D15200DB-7858-26CE-2A27-4FCAB9415935"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

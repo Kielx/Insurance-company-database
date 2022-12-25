@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B543190F-D923-2D5E-EFCF-8191FC2670A1" name="employee">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>4E43829A-60AA-6E41-9D89-3A73A17C3F1E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="755258FE-C9FC-C79B-591E-66EB245D8E91">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>CB6A96F2-ACB9-A424-9233-1C1996691BA8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="D0A8DA7C-7F5F-06FE-B943-CD4FDF03F2CC">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>03B6B158-E701-D221-7404-F141363B5953</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="06D864BC-AFDC-C3E8-62C2-1A6B5AF1C556">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>99B8C852-B425-C21A-9FB0-F9AEA9E6D845</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_birth" id="C53D47D6-FE0D-31FF-60F9-2CAB8186F17F">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>6C404F91-B3AA-CAE7-3F70-5027F4E1E2BC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region_id" id="CDEB4FC7-11D7-71BA-3EC9-69338B2968E7">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>913B815E-65B0-8FCF-08E9-F179526F1F31</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D539ECE-B44B-2CD2-B074-BA1D18197096" referredColumn="07806026-1111-ADA4-4716-05A616A7AD97"/>
+</associations>
+</Column>
+<Column name="city_id" id="E2CD32B5-DB58-9D5B-91E6-60371B14F4DE">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>A27BBBD8-CF21-227E-EE95-1469932D5E12</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2676FFFA-67C9-DCAB-D7E4-77AA45FC45FD" referredColumn="BFC459AC-6F2E-E073-7BE9-E4935266BD90"/>
+</associations>
+</Column>
+<Column name="street_id" id="97AC5AED-9055-7282-80E9-B1E8D8731DAD">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>DABD9F2A-4AE7-692F-E4AF-58FEC2181941</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00D5E81E-6AE8-9248-3A3B-B889547CE086" referredColumn="4B2CFB79-3640-86D2-E235-F768749053AE"/>
+</associations>
+</Column>
+<Column name="houseNr_id" id="59C818CF-D5F7-8608-C6AD-EB301A317C7A">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>D30310C3-4041-5953-8483-4F59A287972D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3426D90-3627-FB9B-1AAB-15B5CCED690C" referredColumn="5CF82A31-55A7-66CD-7106-5C310D928517"/>
+</associations>
+</Column>
+<Column name="date_of_employment" id="7FBD65F6-C7C5-6394-B5F0-B2733C3199C9">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>A04EA224-F8F4-2F1B-4B51-D68E6158DDA2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salary" id="A9DB3CA0-2BA7-D23D-B762-59E6F4473B87">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>5A2FFE21-F92F-C563-79D3-3CD9C0013A8F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86A70C6C-0FCE-085C-9B14-66B136CBA551" name="employee_PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>C8BFD332-1953-0555-4718-D8E0A0A2D19D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="755258FE-C9FC-C79B-591E-66EB245D8E91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DEDAC5F-136D-1D05-9D9B-B6E0B0298B0F" name="employee_region_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>292E6325-8869-DD0A-BAAB-F53BD44FAAB7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDEB4FC7-11D7-71BA-3EC9-69338B2968E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC11C301-D4E7-904B-7819-798D558354EC" name="employee_city_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>B5ABD1C4-744C-252E-A1CF-8E74CC7547EE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2CD32B5-DB58-9D5B-91E6-60371B14F4DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3260AAE7-25A0-1E76-03B9-0A7242AF4722" name="employee_street_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>F583A202-939B-CC66-E194-AE2A31263E48</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97AC5AED-9055-7282-80E9-B1E8D8731DAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45BB93E0-1394-BE66-992F-2DF0501FD0E0" name="employee_houseNr_FK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-27 21:40:02 UTC</createdTime>
+<generatorID>ABB546DF-CBB2-EB52-0AC7-41280CF80D80</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59C818CF-D5F7-8608-C6AD-EB301A317C7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

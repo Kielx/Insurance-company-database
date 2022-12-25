@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B8F6EE7-F9EA-2669-7545-234A4321D928" name="client">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-14 13:57:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="client_id" id="E63A7F8C-0955-41DA-2701-38A17326D291">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-14 13:57:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="2E71B527-F235-2593-2D87-3D64BD4339DE">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-14 13:57:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="39107D55-D036-62B5-26B6-CC505678F41E">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 08:50:28 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_of_birth" id="441C0D03-E37E-1E2F-8534-ED40BD755CD3">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 08:50:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region_id" id="81D84640-9A4C-AC60-F005-82A84E1715EB">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:18:53 UTC</createdTime>
+<generatorID>91A544B3-D05E-86BD-E839-7DB60400F444</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>AB2FACCE-2006-4AC5-FDB1-94821A2DAE5E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city_id" id="5B3DFA6F-A02B-2802-47E0-4F152D08B5B8">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:02 UTC</createdTime>
+<generatorID>1D081B6B-57C5-AB22-CB35-43B1BFE9840F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>41271C26-87FB-FD86-6555-E3571034AD22</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="0D00905B-C1C6-8815-FFDA-CE11E7148247">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:08 UTC</createdTime>
+<generatorID>120B7C7F-8A90-D7D3-6FEE-4EF31C303170</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>ED4783CA-4105-B25D-9DD0-EC5E7D18FFA5</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="houseNr_id" id="2BCD3717-79FF-265A-69E1-63EEE3DA5EC4">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-19 22:19:13 UTC</createdTime>
+<generatorID>5F1494E7-C377-E228-F099-89FB564E2562</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>042DAC92-29F7-D957-DC1C-AEAB299759A5</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clientType_id" id="9152AEF3-22EA-997E-2BD6-699C98F3B5D8">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:55:27 UTC</createdTime>
+<generatorID>7DA02072-4E77-F3E1-4E29-62A53CD8F9EC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>48D8116C-18F7-330D-3989-BADFC20B47FF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="discount" id="9B709213-A86C-3F82-8D79-677CE0BE8C85">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-22 19:58:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FE20D1AB-2DB1-B3A5-CA88-D0ED54741F9F" name="user PK">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-14 13:57:43 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E63A7F8C-0955-41DA-2701-38A17326D291</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

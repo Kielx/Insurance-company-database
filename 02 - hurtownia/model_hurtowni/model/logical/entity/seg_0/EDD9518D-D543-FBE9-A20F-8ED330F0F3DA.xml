@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EDD9518D-D543-FBE9-A20F-8ED330F0F3DA" name="claim">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:46:54 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="claim_id" id="B9D27568-250B-BD05-B8EC-B75A1BFBFF90">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:43:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="claim_name" id="C5729152-9C71-E518-2991-426723C0F808">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:47:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="insurance_id" id="AF307BC2-68FF-BCDC-9A07-1DAAE58F1FAF">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:43:21 UTC</createdTime>
+<generatorID>525C4E56-4107-408B-A4E4-EB4CD0F78110</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>09CC2F93-C690-3D63-26A9-54457EA417AE</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="claim_amount" id="D1744515-7809-F03C-CC13-09C5FE2D76D6">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:46:43 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cs_id" id="C171E288-C68C-DA23-A804-41C9858FCFFF">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-21 21:48:47 UTC</createdTime>
+<generatorID>718318EF-8D36-CE27-B766-57EA38637A28</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>E3377D95-F333-C773-6EF8-7C69ED25A3BC</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C92C2DD-838C-46D2-E219-A4E9A7AA5A01" name="claim PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:48:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B9D27568-250B-BD05-B8EC-B75A1BFBFF90</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

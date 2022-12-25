@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="agent_phone_rel" directorySegmentName="seg_0" id="89A20FCA-67D2-3A32-952D-7A025EE20622">
+<createdBy>745554</createdBy>
+<createdTime>2022-11-15 12:24:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<sourcePk>C8BFD332-1953-0555-4718-D8E0A0A2D19D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4E43829A-60AA-6E41-9D89-3A73A17C3F1E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F90E9B08-3444-864F-F7B2-8ADE8D18D6B8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

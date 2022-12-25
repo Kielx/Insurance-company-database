@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E657ED8-AB5F-FC75-E383-2D2C08C79BDE" name="branch">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:40:24 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="branch_id" id="0770E73E-DCBC-F6AE-09E1-5480C2E6EC84">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:40:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_name" id="D5D5DF2A-1E0B-A349-BE8E-9DBBF275246A">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:40:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3451E78E-4777-8B4E-8574-562B42E32755</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region_id" id="E3C792EE-AE4A-94DC-8A46-00D739EC2452">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:41:20 UTC</createdTime>
+<generatorID>8D16D4E8-EB4E-0DF9-087E-364858C0F229</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>AB2FACCE-2006-4AC5-FDB1-94821A2DAE5E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city_id" id="C9ADF021-2A51-3609-7439-BA307A2038F6">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:41:24 UTC</createdTime>
+<generatorID>5F1CFE9F-FF18-F91A-0E32-34317EC2EFF1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>41271C26-87FB-FD86-6555-E3571034AD22</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="8FDB2D30-819A-F9E1-66D0-CF7F285F52E7">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:41:30 UTC</createdTime>
+<generatorID>5673C1B5-8172-F7DE-681A-3F11DB5F2BC3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>ED4783CA-4105-B25D-9DD0-EC5E7D18FFA5</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="houseNr_id" id="387AA980-55ED-51AD-9A6F-F51C475E41CB">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:41:34 UTC</createdTime>
+<generatorID>D515A2C7-628A-87CA-FE08-DC68F244D513</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<referedAttribute>042DAC92-29F7-D957-DC1C-AEAB299759A5</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AC79CFAC-B1AD-FA75-8475-0CF6AADD7E5C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E4BCBCE-BC2E-4A99-EB65-CBCCFE13E27C" name="branch PK">
+<createdBy>Kielx</createdBy>
+<createdTime>2022-11-20 21:40:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="CF0721B3-C64F-C74B-FC31-80FA06AE66FF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0770E73E-DCBC-F6AE-09E1-5480C2E6EC84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

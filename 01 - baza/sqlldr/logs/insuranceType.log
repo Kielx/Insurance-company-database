@@ -1,0 +1,53 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Sun Dec 25 22:02:13 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   sqlldr/insuranceType.ctl
+Data File:      dataGenerator/generatedData/insuranceType.csv
+  Bad File:     sqlldr/bads/insuranceType.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table INSURANCETYPE, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+INSURANCETYPE_ID                    FIRST     *   ,  O(") CHARACTER            
+INSURANCE_TYPE                       NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Rejected - Error on table INSURANCETYPE, column INSURANCETYPE_ID.
+ORA-01722: invalid number
+
+
+Table INSURANCETYPE:
+  4 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 129000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             5
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Sun Dec 25 22:02:13 2022
+Run ended on Sun Dec 25 22:02:13 2022
+
+Elapsed time was:     00:00:00.12
+CPU time was:         00:00:00.06

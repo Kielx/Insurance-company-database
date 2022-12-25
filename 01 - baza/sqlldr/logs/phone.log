@@ -1,0 +1,209 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Sun Dec 25 22:02:12 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   sqlldr/phone.ctl
+Data File:      dataGenerator/generatedData/phone.csv
+  Bad File:     sqlldr/bads/phone.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table PHONE, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PHONE_ID                            FIRST     *   ,  O(") CHARACTER            
+PHONE_NUMBER                         NEXT     *   ,  O(") CHARACTER            
+CLIENT_ID                            NEXT     *   ,  O(") CHARACTER            
+EMPLOYEE_ID                          NEXT     *   ,  O(") CHARACTER            
+BRANCH_ID                            NEXT     *   ,  O(") CHARACTER            
+PHONETYPE_ID                         NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Rejected - Error on table PHONE, column PHONE_ID.
+ORA-01722: invalid number
+
+Record 10002: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10003: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10004: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10005: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10006: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10007: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10008: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10009: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10010: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10011: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10012: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10013: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10014: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10015: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10016: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10017: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10018: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10019: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10020: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10021: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10022: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10023: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10024: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10025: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10026: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10027: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10028: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10029: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10030: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10031: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10032: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10033: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10034: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10035: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10036: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10037: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10038: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10039: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10040: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10041: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10042: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10043: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10044: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10045: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10046: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10047: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10048: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10049: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10050: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+Record 10051: Rejected - Error on table PHONE.
+ORA-02291: integrity constraint (KIELX.PHONE_EMPLOYEE_FK) violated - parent key not found
+
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table PHONE:
+  10000 Rows successfully loaded.
+  51 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 387000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         10250
+Total logical records rejected:        51
+Total logical records discarded:        0
+
+Run began on Sun Dec 25 22:02:12 2022
+Run ended on Sun Dec 25 22:02:13 2022
+
+Elapsed time was:     00:00:00.32
+CPU time was:         00:00:00.13
