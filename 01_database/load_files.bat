@@ -1,17 +1,17 @@
 @echo off
 
-rem Skrypt ³aduj¹cy utworzony wczeœniej dane do bazy za pomoc¹ sqlldr
-rem By zmienic domyslne wartosci nalezy wywolac skrypt i wprowadzic je kolejno jako argumenty polecenia
-rem Skrypt uruchamiamy za pomoca wiersza polecen np. cmd
-rem Nastepnie przechodzimy do folderu gdzie znajduje sie skrypt
-rem A pozniej uruchamiamy go poprzez wprowadzenie komendy .\dane.bat
-rem Ta komenda uruchomi go z domyslnymi danymi uzytkownika
-rem Jesli chcemy je zmienic wprowadzamy inne np. .\dane.bat kamil tajnehaslo mojabaza:1521
+rem Script that loads previously created data into the database using sqlldr
+rem To change the default values you need to call the script and enter them sequentially as command arguments
+rem Run the script using a command line, e.g. cmd
+rem Then we move to the folder where the script is located
+rem And then run it by entering the command .\data.bat
+rem This command will run it with the default user data
+rem If you want to change it, enter other data, e.g. .\load_data.bat username password my_base:1521
 
 
-rem Ustawiamy domyœlne wartoœci dla po³¹czenia
-set USERNAME=test
-set PASSWORD=test
+rem Set default values for the connection
+set USERNAME=kielx
+set PASSWORD=d11
 set CONNECTION_STRING=@//localhost:1521/XEPDB1
 
 rem Sprawdzamy czy wartoœci
