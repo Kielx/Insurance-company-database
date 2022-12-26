@@ -28,25 +28,26 @@ citiesList = ['Poznań', 'Bydgoszcz', 'Kraków', 'Łódź', 'Wrocław', 'Lublin'
 
 insurance_begin_dates = []
 employee_employment_dates = []
-os.remove("../dane.bat")
+os.remove("../load_data.bat")
 
 bat_file_text = """@echo off
 
-rem Skrypt ładujący utworzony wcześniej dane do bazy za pomocą sqlldr
-rem By zmienic domyslne wartosci nalezy wywolac skrypt i wprowadzic je kolejno jako argumenty polecenia
-rem Skrypt uruchamiamy za pomoca wiersza polecen np. cmd
-rem Nastepnie przechodzimy do folderu gdzie znajduje sie skrypt
-rem A pozniej uruchamiamy go poprzez wprowadzenie komendy .\dane.bat
-rem Ta komenda uruchomi go z domyslnymi danymi uzytkownika
-rem Jesli chcemy je zmienic wprowadzamy inne np. .\dane.bat kamil tajnehaslo mojabaza:1521
+rem Script that loads previously created data into the database using sqlldr
+rem To change the default values you need to call the script and enter them sequentially as command arguments
+rem Run the script using a command line, e.g. cmd
+rem Then we move to the folder where the script is located
+rem And then run it by entering the command .\data.bat
+rem This command will run it with the default user data
+rem If you want to change it, enter other data, e.g. .\load_data.bat username password my_base:1521
 
 
-rem Ustawiamy domyślne wartości dla połączenia
+rem Set default values for the connection
 set USERNAME=kielx
 set PASSWORD=d11
 set CONNECTION_STRING=@//localhost:1521/XEPDB1
 
-rem Sprawdzamy czy wartości
+
+rem Check if cli arguments are present, if not use default values
 if not "%1"=="" (
   set USERNAME=%1
 ) 
@@ -84,7 +85,7 @@ def create_ctl_file(filename, headers):
     file.write("\n)")
     file.close()
     print(f"Successfully generated {filename}.ctl file")
-    bat_file = open('../dane.bat', "a+")
+    bat_file = open('../load_data.bat', "a+")
     bat_file.write(f"sqlldr %USERNAME%/%PASSWORD%%CONNECTION_STRING% control='sqlldr/{filename}.ctl' log='sqlldr/logs/{filename}.log' bad='sqlldr/bads/{filename}.bad'\n")
     bat_file.close()
     print(f"Successfully appended {filename} data to load_files.bat")
