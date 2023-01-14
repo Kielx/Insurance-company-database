@@ -1,64 +1,65 @@
 -- 01 ROLLUP - Baza danych
---Roczne zestawienie ilo≈õci sprzedanych polis w odniesieniu do regionu i pracownik√≥w
+--Roczne zestawienie ilo∂ci sprzedanych polis w odniesieniu do regionu i pracownikÛw
 SELECT rok,
-  NVL2(region_name, region_name, 'Wszystkie wojew√≥dztwa') AS "Wojew√≥dztwo",
-  NVL2(employee.first_name, employee.first_name, 'Suma')  AS "Imiƒô pracownika",
+  branch_name AS "Oddzia≥",
+  NVL2(employee.first_name, employee.first_name, 'Suma')  AS "Imie pracownika",
   NVL2(employee.last_name, employee.last_name, 'Suma')    AS "Nazwisko pracownika",
-  "Ilo≈õƒá sprzedanych polis"
-FROM region
-RIGHT JOIN
-  (SELECT EXTRACT(YEAR FROM insurance.begin_date) AS Rok,
-    region_id,
+  "Ilosc sprzedanych polis"
+FROM (
+SELECT EXTRACT(YEAR FROM insurance.begin_date) AS Rok,
     employee_id,
-    COUNT(employee_id) AS "Ilo≈õƒá sprzedanych polis"
+    branch_id,
+    COUNT(employee_id) AS "Ilosc sprzedanych polis"
   FROM insurance
-  INNER JOIN employee USING (employee_id)
-  GROUP BY ROLLUP (EXTRACT(YEAR FROM insurance.begin_date), region_id, employee_id)
+  GROUP BY ROLLUP (EXTRACT(YEAR FROM insurance.begin_date), branch_id, employee_id)
   ORDER BY EXTRACT(YEAR FROM insurance.begin_date),
     COUNT(employee_id) DESC
-  ) USING (region_id)
-LEFT JOIN employee USING (employee_id) ;
+) pol
+LEFT JOIN employee ON pol.employee_id = employee.employee_id
+LEFT JOIN branch ON pol.branch_id = branch.branch_id;
 
 
 -- 01 ROLLUP - Baza danych
---Roczne zestawienie ilo≈õci sprzedanych polis w odniesieniu do oddzia≈Çu i typu polisy
-SELECT EXTRACT(YEAR FROM insurance.begin_date)                                         AS Rok,
-  NVL2(branch.branch_name, branch.branch_name, 'Wszystkie Oddzia≈Çy')                   AS "Nazwa oddzia≈Çu",
-  NVL2(insurancetype.insurance_type, insurancetype.insurance_type, 'Wszystkie polisy') AS "Rodzaj polisy",
-  COUNT(insurance.insuranceType_id)                                                    AS Ilosc
-FROM insurance
-INNER JOIN insuranceType
-ON insurance.insurancetype_id = insurancetype.insurancetype_id
-INNER JOIN branch
-ON insurance.branch_id = branch.branch_id
-GROUP BY ROLLUP (EXTRACT(YEAR FROM insurance.begin_date), branch.branch_name, insurancetype.insurance_type )
-ORDER BY EXTRACT(YEAR FROM insurance.begin_date),
-  branch.branch_name,
-  COUNT(insurance.insuranceType_id) DESC;
+--Roczne zestawienie ilo∂ci sprzedanych polis w odniesieniu do oddzia≥u i typu polisy
+SELECT 
+  NVL2(branch.branch_name, branch.branch_name, 'Suma') AS "Nazwa oddzia≥u",
+  Rok,
+  Ilosc,
+  NVL2(insuranceType.insurance_type, insuranceType.insurance_type, 'Suma') AS "Rodzaj polisy"
+FROM
+  (SELECT EXTRACT(YEAR FROM insurance.begin_date) AS Rok,
+    branch_id,
+    insuranceType_id,
+    COUNT(insurance.insuranceType_id) AS Ilosc
+  FROM insurance
+  GROUP BY ROLLUP (EXTRACT(YEAR FROM insurance.begin_date), branch_id, insuranceType_id )
+  ORDER BY EXTRACT(YEAR FROM insurance.begin_date),
+    COUNT(insurance.insuranceType_id) DESC,
+    branch_id
+  ) pol
+LEFT JOIN branch ON pol.branch_id = branch.branch_id
+LEFT JOIN insuranceType ON pol.insuranceType_id = insuranceType.insuranceType_id;
   
 
 -- 01 ROLLUP - Baza danych
--- Roczne zestawienie przychodu ze sprzedanych polis w odniesieniu do poszczeg√≥lnych oddzia≈Ç√≥w i pracownik√≥w
--- W zestawieniu widzimy jaki sumaryczny przych√≥d z polis w danym roku odnotowano w stosunku do wszystkich dzia≈Ç√≥w (branch),
--- jaki w odniesieniu do poszcczeg√≥lnych dzia≈Ç√≥w,
--- a jaki w odniesieniu do poszczeg√≥lnych pracownik√≥w tych dzia≈Ç√≥w
+-- Roczne zestawienie przychodu ze sprzedanych polis w odniesieniu do poszczegÛlnych oddzia≥Ûw i pracownikÛw
+-- W zestawieniu widzimy jaki sumaryczny przychÛd z polis w danym roku odnotowano w stosunku do wszystkich dzia≥Ûw (branch),
+-- jaki w odniesieniu do poszcczegÛlnych dzia≥Ûw,
+-- a jaki w odniesieniu do poszczegÛlnych pracownikÛw tych dzia≥Ûw
 SELECT pol.rok,
-  NVL2(branch.branch_name, branch.branch_name, 'Wszystkie oddzia≈Çy')   AS "Nazwa oddzia≈Çu",
-  NVL2(employee.first_name, employee.first_name, 'Wszyscy pracownicy') AS "Imiƒô pracownika",
+  NVL2(branch.branch_name, branch.branch_name, 'Wszystkie oddzialy')   AS "Nazwa oddzia≥u",
+  NVL2(employee.first_name, employee.first_name, 'Wszyscy pracownicy') AS "ImiÍ pracownika",
   NVL2(employee.last_name, employee.last_name, 'Wszyscy pracownicy')   AS "Nazwisko pracownika",
   pol.suma
-FROM employee
-RIGHT JOIN
+FROM 
   (SELECT EXTRACT(YEAR FROM insurance.begin_date) AS Rok,
-    insurance.branch_id,
-    employee.employee_id,
+    branch_id,
+    employee_id,
     SUM(insurance.price) AS Suma
   FROM insurance
-  INNER JOIN employee
-  ON employee.employee_id = insurance.employee_id
-  GROUP BY ROLLUP (EXTRACT(YEAR FROM insurance.begin_date), insurance.branch_id, employee.employee_id)
+  GROUP BY ROLLUP (EXTRACT(YEAR FROM insurance.begin_date), branch_id, employee_id)
   ORDER BY EXTRACT(YEAR FROM insurance.begin_date),
     SUM(insurance.price) DESC
-  ) pol ON employee.employee_id = pol.employee_id
-LEFT JOIN branch
-ON pol.branch_id = branch.branch_id;
+  ) pol
+LEFT JOIN branch ON pol.branch_id = branch.branch_id
+LEFT JOIN employee ON pol.employee_id = employee.employee_id;

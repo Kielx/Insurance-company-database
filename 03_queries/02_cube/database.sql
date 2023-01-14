@@ -1,21 +1,21 @@
 -- 02 Cube - Baza danych
 --Roczne i miesięczne zestawienie ilości sprzedanych polis w województwach
-SELECT "Rok",
-  region_name AS "Województwo",
-  "Miesiąc",
-  "Ilość sprzedanych polis"
-FROM region OUTER
-LEFT JOIN
+SELECT 
+  "Rok",
+   NVL2(branch_name, branch_name, 'Wszystkie oddzialy') AS "Oddzial",
+  "Miesiac",
+  "Ilosc sprzedanych polis"
+FROM
   (SELECT EXTRACT(YEAR FROM insurance.begin_date) AS "Rok",
-    EXTRACT(MONTH FROM insurance.begin_date)      AS "Miesiąc",
-    region_id,
-    COUNT(employee_id) AS "Ilość sprzedanych polis"
+    EXTRACT(MONTH FROM insurance.begin_date)      AS "Miesiac",
+    branch_id,
+    COUNT(employee_id) AS "Ilosc sprzedanych polis"
   FROM insurance
-  INNER JOIN employee USING (employee_id)
-  GROUP BY CUBE (EXTRACT(YEAR FROM insurance.begin_date), EXTRACT(MONTH FROM insurance.begin_date), region_id)
+  GROUP BY CUBE (EXTRACT(YEAR FROM insurance.begin_date), EXTRACT(MONTH FROM insurance.begin_date), branch_id)
   ORDER BY EXTRACT(YEAR FROM insurance.begin_date),
     COUNT(employee_id) DESC
-  ) USING (region_id);
+  ) pol
+LEFT JOIN branch ON pol.branch_id = branch.branch_id; 
   
 -- 02 Cube - Baza danych
 -- Roczne i miesięczne zestawienie sumy wypłaconych odszkodowań, które zostały zatwierdzone
@@ -34,24 +34,22 @@ GROUP BY CUBE (EXTRACT(YEAR FROM insurance.begin_date), EXTRACT(MONTH FROM insur
 -- Dzięki temu zestawieniu w łatwy sposób możemy ocenić, który pracownik osiąga największe zyski oraz jaki rodzaj sprzedawanych polis jest dla firmy najbarziej rentowny.
 -- Dodatkowo możemy ocenić czy pracownik przynosi dla firmy zyski czy straty oraz porównać jak wygląda jego praca na przestrzeni lat
 SELECT rok,
-  employee.first_name AS "Imię",
-  employee.last_name  AS "Nazwisko",
+  NVL2(employee.first_name, employee.first_name, 'Suma') AS "Imię",
+  NVL2(employee.last_name, employee.last_name, 'Suma') AS "Nazwisko",
   salary              AS "Wynagrodzenie",
-  "Rodzaj polisy",
-  "Suma sprzedaży"
-FROM employee
-JOIN
+  NVL2(insurancetype.insurance_type, insurancetype.insurance_type, 'Wszystkie polisy') AS "Rodzaj polisy",
+  "Suma sprzedaży" FROM
   (SELECT EXTRACT(YEAR FROM insurance.begin_date) AS Rok,
-    employee.employee_id,
-    NVL2(insurancetype.insurance_type, insurancetype.insurance_type, 'Wszystkie polisy') AS "Rodzaj polisy",
+    employee_id,
+    insuranceType_id,
     SUM(insurance.price)                                                                 AS "Suma sprzedaży"
   FROM insurance
-  INNER JOIN insuranceType
-  ON insurance.insurancetype_id = insurancetype.insurancetype_id
-  INNER JOIN employee
-  ON insurance.employee_id = employee.employee_id
-  GROUP BY CUBE (EXTRACT(YEAR FROM insurance.begin_date), employee.employee_id, insurancetype.insurance_type )
+  GROUP BY CUBE (EXTRACT(YEAR FROM insurance.begin_date), employee_id, insuranceType_id )
   ORDER BY EXTRACT(YEAR FROM insurance.begin_date),
-    insurancetype.insurance_type,
-    SUM(insurance.price) DESC
+      SUM(insurance.price) DESC,
+    insuranceType_id
+
+  ) pol 
+LEFT JOIN employee ON pol.employee_id = employee.employee_id
+LEFT JOIN insuranceType ON pol.insuranceType_id = insuranceType.insuranceType_id;
   ) USING (employee_id);

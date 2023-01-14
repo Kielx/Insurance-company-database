@@ -1,7 +1,7 @@
 -- 01 ROLLUP - Hurtownia danych
---Roczne zestawienie ilo¶ci sprzedanych polis w odniesieniu do oddzia³u i pracowników
+--Roczne zestawienie iloœci sprzedanych polis w odniesieniu do oddzia³u i pracowników
 SELECT rok,
-  branch_id AS "Oddzia³",
+  branch_name AS "Oddzia³",
   NVL2(employee.first_name, employee.first_name, 'Suma')  AS "Imie pracownika",
   NVL2(employee.last_name, employee.last_name, 'Suma')    AS "Nazwisko pracownika",
   "Ilosc sprzedanych polis"
@@ -15,8 +15,8 @@ SELECT EXTRACT(YEAR FROM insurance.begin_date) AS Rok,
   ORDER BY EXTRACT(YEAR FROM insurance.begin_date),
     COUNT(employee_id) DESC
 ) pol
-LEFT JOIN employee ON pol.employee_id = employee.employee_id;
-LEFT JOIN branch ON pol.branch_id = branch.branch_id
+LEFT JOIN employee ON pol.employee_id = employee.employee_id
+LEFT JOIN branch ON pol.branch_id = branch.branch_id;
 
 -- 01 ROLLUP - Hurtownia danych
 --Roczne zestawienie ilosci sprzedanych polis w odniesieniu do oddzialu i typu polisy
@@ -47,8 +47,8 @@ LEFT JOIN insuranceType ON pol.insuranceType_id = insuranceType.insuranceType_id
 -- jaki w odniesieniu do poszcczególnych dzia³ów,
 -- a jaki w odniesieniu do poszczególnych pracowników tych dzia³ów
 SELECT pol.rok,
-  NVL2(branch.branch_name, branch.branch_name, 'Wszystkie oddziaÅ‚y')   AS "Nazwa oddziaÅ‚u",
-  NVL2(employee.first_name, employee.first_name, 'Wszyscy pracownicy') AS "ImiÄ™ pracownika",
+  NVL2(branch.branch_name, branch.branch_name, 'Wszystkie oddzialy')   AS "Nazwa oddzia³u",
+  NVL2(employee.first_name, employee.first_name, 'Wszyscy pracownicy') AS "Imiê pracownika",
   NVL2(employee.last_name, employee.last_name, 'Wszyscy pracownicy')   AS "Nazwisko pracownika",
   pol.suma
 FROM 

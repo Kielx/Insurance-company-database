@@ -33,8 +33,8 @@ GROUP BY CUBE (EXTRACT(YEAR FROM insurance.begin_date), EXTRACT(MONTH FROM insur
 -- Dziêki temu zestawieniu w ³atwy sposób mo¿emy oceniæ, który pracownik osi±ga najwiêksze zyski oraz jaki rodzaj sprzedawanych polis jest dla firmy najbarziej rentowny.
 -- Dodatkowo mo¿emy oceniæ czy pracownik przynosi dla firmy zyski czy straty oraz porównaæ jak wygl±da jego praca na przestrzeni lat
 SELECT rok,
-  employee.first_name AS "Imiê",
-  employee.last_name  AS "Nazwisko",
+  NVL2(employee.first_name, employee.first_name, 'Suma') AS "Imiê",
+  NVL2(employee.last_name, employee.last_name, 'Suma') AS "Nazwisko",
   salary              AS "Wynagrodzenie",
   NVL2(insurancetype.insurance_type, insurancetype.insurance_type, 'Wszystkie polisy') AS "Rodzaj polisy",
   "Suma sprzeda¿y" FROM
@@ -51,3 +51,4 @@ SELECT rok,
   ) pol 
 LEFT JOIN employee ON pol.employee_id = employee.employee_id
 LEFT JOIN insuranceType ON pol.insuranceType_id = insuranceType.insuranceType_id;
+  ) USING (employee_id);
