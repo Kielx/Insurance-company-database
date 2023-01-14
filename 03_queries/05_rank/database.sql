@@ -1,8 +1,8 @@
 -- 05 Funkcje rankingowe - Baza danych
--- Zestawienie rankingu oddzia艂贸w pod k膮tem ilo艣ci sprzedanych polis
-SELECT branch_name AS "Nazwa oddzia艂u",
-  SUM(price)       AS "Suma sprzeda偶y polis",
-  COUNT(*) "Ilo艣c sprzedanych polis w oddziale",
+-- Zestawienie rankingu oddzia丑w pod k眛em ilo禼i sprzedanych polis
+SELECT branch_name AS "Nazwa oddzia硊",
+  SUM(price)       AS "Suma sprzeda縴 polis",
+  COUNT(*) "Ilo禼 sprzedanych polis w oddziale",
   RANK() OVER (ORDER BY SUM(price) DESC) AS "Ranking"
 FROM branch
 INNER JOIN insurance USING (branch_id)
@@ -10,42 +10,42 @@ GROUP BY branch_name ;
 
 
 -- 05 Funkcje rankingowe - Baza danych
--- Ranking pracownik贸w pod k膮tem ilo艣ci sprzedanych polis
+-- Ranking pracownik體 pod k眛em ilo禼i sprzedanych polis
 SELECT first_name,
   last_name,
-  "Suma sprzeda偶y polis",
-  "Ilo艣c sprzedanych polis",
+  "Suma sprzeda縴 polis",
+  "Ilosc sprzedanych polis",
   "Ranking"
 FROM
   (SELECT employee_id,
-    SUM(price) AS "Suma sprzeda偶y polis",
-    COUNT(*) "Ilo艣c sprzedanych polis",
+    SUM(price) AS "Suma sprzeda縴 polis",
+    COUNT(*) "Ilosc sprzedanych polis",
     RANK() OVER (ORDER BY SUM(price) DESC) AS "Ranking"
-  FROM employee
-  INNER JOIN insurance USING (employee_id)
+  FROM insurance
   GROUP BY employee_id
   ) pol
-LEFT JOIN employee USING (employee_id) ;
+LEFT JOIN employee USING (employee_id)
+;
 
 
 -- 05 Funkcje rankingowe - Baza danych
--- Ranking na podstawie 艣redniej cen sprzeda偶y polis w poszczeg贸lnych oddzia艂ach z uwzgl臋dnieniem ilo艣ci sprzedanych polis i ilo艣ci klient贸w
+-- Ranking na podstawie 秗edniej cen sprzeda縴 polis w poszczeg髄nych oddzia砤ch z uwzgl阣nieniem ilo禼i sprzedanych polis i ilo禼i klient體
 SELECT *
 FROM
   (SELECT RANK() OVER (ORDER BY AVG(price) DESC) AS Ranking,
-    branch_name                                  AS "Nazwa oddzia艂u",
-    AVG(price)                                   AS "艢rednia cena polisy",
-    COUNT(insurance_id)                          AS "Ilo艣c sprzedanych polis"
+    branch_name                                  AS "Nazwa oddzia硊",
+    AVG(price)                                   AS "ednia cena polisy",
+    COUNT(insurance_id)                          AS "Ilo禼 sprzedanych polis"
   FROM branch
   INNER JOIN insurance USING (branch_id)
   GROUP BY (branch_name)
   )
 INNER JOIN
-  (SELECT branch_name AS "Nazwa oddzia艂u",
-    COUNT(*)          AS "Ilo艣膰 klient贸w"
+  (SELECT branch_name AS "Nazwa oddzia硊",
+    COUNT(*)          AS "Ilo舵 klient體"
   FROM client
   INNER JOIN insurance USING (client_id)
   INNER JOIN branch USING (branch_id)
   GROUP BY (branch_name)
-  ) USING ("Nazwa oddzia艂u")
+  ) USING ("Nazwa oddzia硊")
 ORDER BY Ranking

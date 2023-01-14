@@ -14,18 +14,17 @@ GROUP BY branch_name ;
 SELECT first_name,
   last_name,
   "Suma sprzedaży polis",
-  "Ilośc sprzedanych polis",
+  "Ilosc sprzedanych polis",
   "Ranking"
 FROM
   (SELECT employee_id,
     SUM(price) AS "Suma sprzedaży polis",
-    COUNT(*) "Ilośc sprzedanych polis",
+    COUNT(*) "Ilosc sprzedanych polis",
     RANK() OVER (ORDER BY SUM(price) DESC) AS "Ranking"
-  FROM employee
-  INNER JOIN insurance USING (employee_id)
+  FROM insurance
   GROUP BY employee_id
   ) pol
-LEFT JOIN employee USING (employee_id) ;
+LEFT JOIN employee USING (employee_id)
 
 
 -- 05 Funkcje rankingowe - Hurtownia danych

@@ -1,7 +1,7 @@
 -- 01 ROLLUP - Baza danych
---Roczne zestawienie ilo¶ci sprzedanych polis w odniesieniu do regionu i pracowników
+--Roczne zestawienie iloœci sprzedanych polis w odniesieniu do regionu i pracowników
 SELECT rok,
-  branch_name AS "Oddzia³",
+  NVL2(branch_name, branch_name, 'Suma') AS "Oddzia³",
   NVL2(employee.first_name, employee.first_name, 'Suma')  AS "Imie pracownika",
   NVL2(employee.last_name, employee.last_name, 'Suma')    AS "Nazwisko pracownika",
   "Ilosc sprzedanych polis"
