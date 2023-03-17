@@ -29,12 +29,14 @@
   </a>
 
 <h3 align="center">Insurance company database and data warehouse</h3>
+<a href="https://github.com/Kielx/Insurance-company-database/tree/polish_version">🇵🇱 POLISH VERSION</a>
 
   <p align="center">
     The goal of the project was to create a fragment of an insurance company's database and a data warehouse based on it. The database contains information about the insurance company's customers, employees and branches, as well as the insurance policies between these entities. The database and warehouse designed this way allows for easy visualization and development of summaries of the work of all branches, employees, as well as policies taken by clients. The assumption is that a company can offer different types of policies - e.g., home insurance, vehicle insurance - and each customer can take out an unlimited number of policies. The project was developed entirely in the environment offered by Oracle, using SQL Developer and SQL Developer Data Modeler, as well as the SQL*Loader tool. The scripts generating the data with which the database was fed were written in Python using the Faker library. 
     <br />
     <br />
     <a href="https://github.com/kielx/Insurance-company-database/issues">Report Bug</a>
+    
   </p>
 </div>
 
